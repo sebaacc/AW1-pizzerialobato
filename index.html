@@ -13,11 +13,13 @@
 
   <body>
     <nav>
-      <img
-        src="./recursos/imagenes/iconos-logo/lobato-logo..webp"
-        alt="Lobato logo"
-        width="100px"
-      />
+      <a href="./index.html">
+        <img
+          src="./recursos/imagenes/iconos-logo/lobato-logo..webp"
+          alt="Lobato logo"
+          width="100px"
+        />
+      </a>
       <a href="./index.html">
         <p>Inicio</p>
       </a>
@@ -28,21 +30,59 @@
         <p>Contacto</p>
       </a>
     </nav>
-    <main>banner, ¿Quiénes somos?, Nuestros productos, Nuestras Promos.</main>
+    <main>
+      <section>
+        <picture>
+          <source
+            media="(min-width: 800px)"
+            srcset="./recursos/imagenes/otros/portada-Inicio.webp"
+            style="object-fit: cover"
+          />
+          <!-- falta poner una img optimizada para celular    -->
+          <img
+            src="./recursos/imagenes/otros/portada-Inicio.webp"
+            alt="Banner Pizzería Lobato"
+            width="100%"
+          />
+        </picture>
+        <section>
+          <article>
+            <i class="fa-solid fa-location-dot" alt="Ubicación"></i>
+            <p>Av. Emilio Castro 669</p>
+          </article>
+          <article>
+            <i class="fa-regular fa-clock" alt="Horarios"></i>
+            <p>Martes a Domingo de 13hs a 00 hs (Feriados de 13hs a 23hs)</p>
+          </article>
+        </section>
+        <section>
+          <article>
+            <i class="fa-brands fa-cash-app" alt="Promociones"></i>
+            <p>PROMOS</p>
+          </article>
+          <article>
+           <i class="fa-solid fa-pizza-slice" alt="Carta de comidas"></i>
+            <p>CARTA</p>
+          </article>
+        </section>
+      </section>
+
+      ¿Quiénes somos?, Nuestros productos, Nuestras Promos.
+    </main>
     <footer>
       <p>¡Seguinos en nuestras redes sociales!</p>
       <section>
-        <a href="./https://www.instagram.com/@pizzerialobato" target="_blank">
+        <a href="https://www.instagram.com/@pizzerialobato" target="_blank">
           <i class="fa-brands fa-square-instagram" alt="Instagram"></i>
         </a>
-        <a href="./https://www.facebook.com/pizzerialobato" target="_blank">
+        <a href="https://www.facebook.com/pizzerialobato" target="_blank">
           <i class="fa-brands fa-facebook" alt="Facebook"></i>
         </a>
-        <a href="./https://www.whatsapp.com/pizzerialobato">
+        <a href="https://wa.me/1234567890" target="_blank">
           <i class="fa-brands fa-whatsapp" alt="Whatsapp"></i>
         </a>
       </section>
-      <p>© 2024 Pizzería Lobato. Todos los derechos reservados.</p>
+      <p>2024 © Pizzería Lobato. Todos los derechos reservados.</p>
     </footer>
   </body>
   <script
