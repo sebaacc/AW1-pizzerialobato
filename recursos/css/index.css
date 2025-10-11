@@ -1,15 +1,20 @@
 /* Fuentes */
 @font-face {
-    font-family: "Noto";
-    src: url(fonts/Noto-Variable.ttf);
+    font-family: "Roboto";
+    src: url(./fonts/Roboto-Regular.ttf);
 }
 
+/* @font-face {
+    font-family: "Roboto";
+    src: url(./fonts/Satisfy-Regular.ttf);
+} */
+ 
 /* Modelo de caja alternativo */
 * {
     box-sizing: border-box;
 }
 
-/* Resetar margenes */
+/* Respetar margenes */
 body,
 h1,
 h2,
@@ -23,7 +28,7 @@ figure {
 Raíz definir:
 */
 :root {
-    font-family: Noto, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 18px;
     line-height: 1.8rem;
     color: #333;
@@ -135,4 +140,25 @@ body {
     padding: 10px;
     margin: 15px 0;
     font-size: inherit;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+/* Estilos Específicos para Mobile (hasta 600px de ancho) */
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+/* Estilos Específicos para Desktop (a partir de 601px de ancho) */
+
+@media screen and (min-width: 601px) {
+  
+
 }
