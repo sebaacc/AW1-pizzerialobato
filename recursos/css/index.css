@@ -41,18 +41,19 @@ body {
     height: 100%;
 }
 
+/*---------------------- HEADER --------------------------*/
+
 .cabecera-principal {
     position: sticky;
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 70px;
     padding: 0 10%;
-    background-color: rgba(148, 227, 255, 0.5);
+    background-color: rgba(81, 112, 255, 1);
     backdrop-filter: blur(30px);
 }
-
 
 .cabecera-principal > a {
     display: flex;
@@ -64,20 +65,36 @@ body {
 .cabecera-principal > a > img {
     display: flex;
     align-items: center;
-    width: 120px;
+    width: 110px;
     margin: 0;
 }
-.cabecera-principal nav {
+
+.cabecera-principal nav a, li, ul {
+    text-decoration: none;
+    color: #ffffff;
+    list-style-type: none;
     display: flex;
-    gap: 15px;
+    gap: 20px;
     justify-content: space-between;
     align-items: center;
 }
 
-.cabecera-principal nav a {
+/*
+.cabecera-principal nav a, li {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
 }
+
+.cabecera-principal nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+*/
+
+/*---------------------- BODY --------------------------*/
 
 .contenido-principal {
     flex-grow: 1;
@@ -86,12 +103,19 @@ body {
 
 .contenido-principal .imagen-hero {
     width: 100%;
-    object-fit: cover;
-    object-position: center;
+    height: 400px;
+    object-fit:cover;
+    object-position:center;
+
 }
 
+/* 
+.info{
+    position: absolute;
+} */
+
 .contenido-principal section {
-    padding: 0 10%;
+    /* padding: 0 10%; */
 }
 .contenido-principal h1 {
     text-align: center;
@@ -108,17 +132,7 @@ body {
     border-radius: 8px;
 }
 
-.pie-principal {
-    background-color: #0c689a;
-    color:#fff;
-    display: flex;
-    justify-content: center;
-}
-
-.pie-principal ul {
-    list-style: none;
-    text-align: center;
-}
+/* Formulario de Contacto */
 
 .formulario-pedidos {
     display: flex;
@@ -140,6 +154,33 @@ body {
     padding: 10px;
     margin: 15px 0;
     font-size: inherit;
+}
+
+/*---------------------- FOOTER --------------------------*/
+i{
+    font-size: 45px;
+    color: #2a272a;
+}
+
+.pie-principal {
+    background-color: rgba(81, 112, 255, 1);
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    padding: 10px 0px;
+    /*justify-content: center;*/
+}
+
+.pie-principal h3{
+    margin: 5px;
+}
+
+.pie-principal section, a{
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
 }
 
 /* -------------------------------------------------------------------------------------- */
