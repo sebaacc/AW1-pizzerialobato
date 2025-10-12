@@ -5,7 +5,7 @@
 }
 
 /* @font-face {
-    font-family: "Roboto";
+    font-family: "Satisfy";
     src: url(./fonts/Satisfy-Regular.ttf);
 } */
  
@@ -34,11 +34,17 @@ Raíz definir:
     color: #333;
 }
 
-/* estilos */
+/* Estilos generales */
 body {
     display: flex;
     flex-direction: column;
     height: 100%;
+}
+
+ul, li, a {
+    text-decoration: none;
+    color: #ffffff;
+    list-style-type: none;
 }
 
 /*---------------------- HEADER --------------------------*/
@@ -76,30 +82,18 @@ body {
     margin: 0;
 }
 
-.cabecera-principal nav a, li, ul {
-    text-decoration: none;
-    color: #ffffff;
-    list-style-type: none;
+.cabecera-principal nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cabecera-principal ul {
     display: flex;
     gap: 20px;
     justify-content: space-between;
     align-items: center;
 }
 
-/*
-.cabecera-principal nav a, li {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.cabecera-principal nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 30px;
-    justify-content: space-between;
-    align-items: center;
-}
-*/
 
 /*---------------------- BODY --------------------------*/
 
@@ -113,9 +107,46 @@ body {
     height: 400px;
     object-fit:cover;
     object-position:center;
-
 }
 
+.contenedor-overlay {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: absolute;
+    color: white;
+    margin: 25px;
+    gap: 50px;
+}
+
+.seccion-hero {
+    font-weight: bold;
+}
+
+.seccion-hero a {
+    color: inherit
+}
+
+.seccion-hero menu li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.hijo-overlay {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    border-radius: 8px;
+    background-color: #0000005c;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    padding: 15px;
+}
+.hijo-overlay i {
+    color: #fff;
+}
 /* 
 .info{
     position: absolute;
@@ -223,6 +254,7 @@ body {
     width: 300px;
 }
 
+
 /* Formulario de Contacto */
 
 .formulario-pedidos {
@@ -282,6 +314,11 @@ i{
   body {
     padding: 10px;
   }
+
+  /*--------------Body-------------------- */
+  .contenido-principal .imagen-hero {
+    height: 450px;
+}
 
   
 }
