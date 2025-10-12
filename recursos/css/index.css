@@ -44,7 +44,7 @@ body {
 /*---------------------- HEADER --------------------------*/
 
 .cabecera-principal {
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -53,6 +53,13 @@ body {
     padding: 0 10%;
     background-color: rgba(81, 112, 255, 1);
     backdrop-filter: blur(30px);
+    /* border: #000000 solid 0.1px; */
+    box-shadow:
+    -0.5px -0.5px 0 rgb(0, 0, 0),
+     0.5px -0.5px 0 rgb(0, 0, 0),  
+    -0.5px  0.5px 0 rgb(0, 0, 0),  
+     0.5px  0.5px 0 rgb(0, 0, 0);;
+    
 }
 
 .cabecera-principal > a {
@@ -120,16 +127,103 @@ body {
 .contenido-principal h1 {
     text-align: center;
     margin: 5% 0;
+    color: #5170ff;
 }
 
-/* Clase para el párrafo */
-.parrafo-principal {
+/* Clase para las secciones del main */
+.seccion-principal {
+    margin: 40px 120px;
     text-align: center;
-    padding: 20px;
-    color: #505050;
-    background-color: #dbdbdb;
-    margin-bottom: 20px;
+    padding: 10px;
+    color: #fff;
+    background-color: #5170ff;
     border-radius: 8px;
+    border: #000000 solid 0.5px;
+}
+
+.seccion-principal h2{
+    margin: 1rem;
+    color: #fff;
+    text-shadow:
+    -0.7px -0.7px 0 rgb(0, 0, 0),
+     0.7px -0.7px 0 rgb(0, 0, 0),  
+    -0.7px  0.7px 0 rgb(0, 0, 0),  
+     0.7px  0.7px 0 rgb(0, 0, 0);
+}
+
+.seccion-principal img{
+    display: block;
+    object-fit: cover;
+    margin: 0 auto;
+    width: 300px;
+    height: 200px;
+    border: #000000 solid 0.5px;
+}
+
+.img-doble{
+    margin: 0 auto;
+    display: flex;
+    width: 300px;
+    height: 200px;
+    border: #000000 solid 0.5px;
+}
+
+.img-doble img{
+    width: 150px;
+    height: 200px;
+}
+
+.seccion-principal span{
+    margin: 0.5rem;
+    padding: 2%;
+    /* border: none; */
+    border-radius: 0.5rem;
+    background-color: #952f37dc;
+}
+
+.seccion-principal p{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.seccion-principal article{
+    display: inline-flex;
+    flex-direction: column;
+    margin: 10.5px;
+}
+
+
+.seccion-principal .boton-productos{
+    margin: 1rem auto;
+    width: 250px;
+    height: 37px;
+    border: #000000 solid 0.3px;
+    border-radius: 5mm;
+    background-color: #952f37;
+    color: #fff;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.linea-divisora{
+    display: block;
+    margin: 1.5rem auto; /* Auto en los lados centra horizontalmente */
+    max-width: 80%;
+    height: auto;
+}
+
+.barra-de-busqueda{
+    background-color: #5170ff;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 120px 40px 120px;
+}
+
+.barra-de-busqueda input{
+    border-radius: 5px;
+    width: 300px;
 }
 
 /* Formulario de Contacto */

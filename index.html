@@ -79,7 +79,7 @@
           </li>
         </menu>
       </section>
-      <img
+      <img class="linea-divisora"
         src="/recursos/imagenes/svg/lineaDivisoria.svg"
         alt="Línea divisoria roja"
       />
@@ -101,36 +101,51 @@
           height="600px"
         ></iframe>
       </aside>
-      <img
+      <img class="linea-divisora"
         src="/recursos/imagenes/svg/lineaDivisoria.svg"
         alt="Línea divisoria roja"
       />
-      <section class="parrafo-principal">
+      <section class="seccion-principal">
         <h2>Algunos de nuestros productos</h2>
-        <img
+        <article>
+          <img
           src="/recursos/imagenes/productos/Pizza-calabresa.webp"
           alt="Pizza de calabresa"
           width="300px"
-        />
-        <img
-          src="/recursos/imagenes/productos/Empanada-criolla.webp"
-          alt="Empanada criolla"
+          />
+          <span>Pizza calabresa</span>
+        </article>
+        <!-- <img
+          src="/recursos/imagenes/productos/Pizza-calabresa.webp"
+          alt="Pizza de calabresa"
           width="300px"
-        />
-        <img
-          src="/recursos/imagenes/productos/Pizza-mozzarella.webp"
-          alt="Pizza de mozzarella"
-          width="300px"
-        />
-        <a href="/carta.html">
-          <button>Ver todos</button>
-        </a>
+        /> -->
+        <article>
+          <img
+            src="/recursos/imagenes/productos/Empanada-criolla.webp"
+            alt="Empanada criolla"
+            width="300px"
+          />
+          <span>Empanada de carne</span>
+        </article>
+        <article>
+          <img
+            src="/recursos/imagenes/productos/Pizza-mozzarella.webp"
+            alt="Pizza de mozzarella"
+            width="300px"
+          />
+          <span>Pizza mozzarella</span>
+        </article>
+        <br>
+        <button class="boton-productos" onclick="window.location.href='/carta.html/#h1'">
+          Ver todos
+        </button>
       </section>
-      <img
+      <img class="linea-divisora"
         src="/recursos/imagenes/svg/lineaDivisoria.svg"
         alt="Línea divisoria roja"
       />
-      <section class="parrafo-principal">
+      <section class="seccion-principal">
         <h2>Algunas de nuestras promos vigentes</h2>
         <article>
           <img
@@ -138,7 +153,7 @@
             alt="Promo coca y pizza"
             width="300px"
           />
-          <p>Coca 1.5lt + Pizza a elección</p>
+          <span>Coca 1.5lt + Pizza a elección</span>
           <p>$14.500</p>
         </article>
         <article>
@@ -147,7 +162,7 @@
             alt="Promo coca y empanadas"
             width="300px"
           />
-          <p>Coca 1.5lt + Media docena de Empanadas a elección</p>
+          <span>Coca 1.5lt + Media docena de <br> Empanadas a elección</span>
           <p>$10.500</p>
         </article>
         <article>
@@ -156,9 +171,13 @@
             alt="Promo dos pizzas"
             width="300px"
           />
-          <p>Dos Pizzas Mozzarella</p>
+          <span>Dos Pizzas Mozzarella</span>
           <p>$16.000</p>
         </article>
+          <br>
+          <button class="boton-productos" onclick="window.location.href='/carta.html/#promos'">
+              Ver todos
+          </button>
       </section>
     </main>
     <footer class="pie-principal">
