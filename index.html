@@ -40,6 +40,9 @@
           </li>
         </ul>
       </nav>
+      <div class="menu-hamburguesa">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </header>
 
     <main class="contenido-principal">
@@ -58,49 +61,44 @@
           <menu class="hijo-overlay">
             <li class="card-informacion">
               <i class="fa-brands fa-cash-app" alt="Promociones"></i>
-              <a href="/carta.html/#promos"> PROMOS </a>
+              <div class="boton-rojo">
+                <a href="/carta.html/#promos"> PROMOS </a>
+              </div>
             </li>
             <li class="card-informacion">
-              <i class="fa-solid fa-pizza-slice" alt="Carta de comidas"></i>
-              <a href="/carta.html/#h1"> CARTA </a>
+              <i class="fa-solid fa-utensils" alt="Carta de comidas"></i>
+              <div class="boton-rojo">
+                <a href="/carta.html/#h1"> CARTA </a>
+              </div>
             </li>
           </menu>
         </div>
-        <picture>
-          <source
-            media="(min-width: 800px)"
-            srcset="./recursos/imagenes/otros/portada-Inicio.webp"
-          />
-          <img
-            class="imagen-hero"
-            src="/recursos/imagenes/otros/portada-Inicio-mobile.webp"
-            alt="Banner Pizzería Lobato"
-          />
-        </picture>
       </section>
       <img
         class="linea-divisora"
         src="/recursos/imagenes/svg/lineaDivisoria.svg"
         alt="Línea divisoria roja"
       />
-      <aside>
+      <section class="seccion-opiniones">
         <h2>La opinión de quienes nos eligen</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.1374327392396!2d-58.516879624257705!3d-34.65123197293723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8541d0ab32f%3A0x846d801ab604bf1b!2sLobato!5e0!3m2!1ses-419!2sar!4v1758462474472!5m2!1ses-419!2sar"
-          width="49%"
-          height="600px"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-        <iframe
+        <div class="iframes-opiniones">
+          <iframe id="iframe-calificacion" 
           src="https://widgets.sociablekit.com/google-reviews/iframe/25603516"
           frameborder="0"
           width="49%"
           height="600px"
-        ></iframe>
-      </aside>
+          ></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.1374327392396!2d-58.516879624257705!3d-34.65123197293723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8541d0ab32f%3A0x846d801ab604bf1b!2sLobato!5e0!3m2!1ses-419!2sar!4v1758462474472!5m2!1ses-419!2sar"
+            width="49%"
+            height="600px"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
       <img
         class="linea-divisora"
         src="/recursos/imagenes/svg/lineaDivisoria.svg"
