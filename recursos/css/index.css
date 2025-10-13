@@ -112,12 +112,12 @@ ul, li, a {
 .contenedor-overlay {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     position: absolute;
     color: white;
     margin: 25px;
-    gap: 50px;
+    gap: 30px;
 }
 
 .seccion-hero {
@@ -128,7 +128,7 @@ ul, li, a {
     color: inherit
 }
 
-.seccion-hero menu li{
+.card-informacion {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -137,10 +137,10 @@ ul, li, a {
 .hijo-overlay {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    gap: 30px;
+    width: 90%;
+    gap: 15px;
     border-radius: 8px;
-    background-color: #0000005c;
+    background-color: #000000e1;
     box-shadow: 0 8px 16px rgba(0,0,0,0.3);
     padding: 15px;
 }
@@ -329,5 +329,14 @@ i{
 
 @media screen and (min-width: 601px) {
   
+/*-----------------Body-------------------*/
+.contenedor-overlay {
+    flex-wrap: nowrap;
+}
+.hijo-overlay {
+    width: 48%;
+    margin: 0;
+    justify-content: space-between;
+}
 
 }
