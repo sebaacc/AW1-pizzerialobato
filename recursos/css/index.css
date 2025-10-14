@@ -110,6 +110,56 @@ nav {
   gap: 30px;
 }
 
+/* .img-contacto {
+  width: ;
+  height: ;
+} */
+
+/*-------------------------------VEEEEEEEEEEEEEEEEEER XDXDXDXDXDXD */
+
+.clase-prueba{
+  display: grid;
+  grid-template-areas: "img p"
+                       "img p2"
+                        "img i"
+                        "img i2";
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+.img{
+  grid-area: img;
+  justify-self: center;
+}
+
+.p{
+  grid-area: p;
+  
+}
+
+.p2{
+  grid-area: p2;
+  
+}
+
+.i{
+  grid-area: i;
+  display: flex;
+  align-items: center;
+}
+
+.i2{
+  grid-area: i2;
+  display: flex;
+  align-items: center;
+
+}
+
+/* .seccion-formulario{
+
+} */
+
+/*-------------------------------VEEEEEEEEEEEEEEEEEER XDXDXDXDXDXD */
 .seccion-hero {
   font-weight: bold;
   width: 100%;
@@ -291,6 +341,7 @@ nav {
   flex-direction: column;
   max-width: 600px;
   margin: 0 auto;
+  background-color: #5171ff65;
 }
 
 .formulario-pedidos input,
@@ -316,24 +367,28 @@ i {
 .pie-principal {
   background-color: rgba(81, 112, 255, 1);
   color: #fff;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  display: block;
+  /*flex-direction: column;*/
+  /* gap: 15px; */
   align-items: center;
   padding: 10px;
   text-align: center;
 }
 
-.pie-principal section,
-a {
-  display: flex;
-  gap: 20px;
+.pie-principal section a {
+  /* display: flex; */
+  gap: 20px; 
   text-decoration: none;
 }
 
 .pie-principal i {
   font-size: 30px;
   color: #ffff;
+  margin: 10px 10px;
+}
+
+.pie-principal h3 {
+  margin: 10px 0px;
 }
 
 /* -------------------------------------------------------------------------------------- */
