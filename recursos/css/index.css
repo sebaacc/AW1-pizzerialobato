@@ -238,7 +238,9 @@ nav {
 }
 /* Clases para las secciones del main */
 .seccion-principal {
-  margin: 10%;
+  margin: 5% 10%;
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
   text-align: center;
   padding: 10px;
   color: #fff;
@@ -263,7 +265,7 @@ nav {
   border: #000000 solid 0.5px;
 }
 
-.img-doble {
+/* .img-doble {
   margin: 0 auto;
   display: flex;
   width: 300px;
@@ -274,7 +276,7 @@ nav {
 .img-doble img {
   width: 150px;
   height: 200px;
-}
+} */
 
 .seccion-principal span {
   margin: 0.5rem;
@@ -286,6 +288,8 @@ nav {
 
 .seccion-principal p {
   color: #ffffff;
+  text-shadow: -0.7px -0.7px 0 #952f37, 0.7px -0.7px 0 #952f37,
+    -0.7px 0.7px 0 #952f37, 0.7px 0.7px 0 #952f37;
   font-weight: bold;
 }
 
@@ -382,9 +386,10 @@ i {
 }
 
 .pie-principal i {
-  font-size: 30px;
+  font-size: 35px;
   color: #ffff;
-  margin: 10px 10px;
+  margin: 8px 13px;
+  color: #1f1d1f
 }
 
 .pie-principal h3 {
