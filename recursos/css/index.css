@@ -85,6 +85,17 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+/*-----------Menu hamburguesa----------------*/
+/* .nav-menu {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    background-color: #444;
+    max-height: 200px; 
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+} */
 .cabecera-principal ul {
   display: flex;
   gap: 20px;
@@ -210,27 +221,9 @@ nav {
 }
 
 .card-informacion:hover .boton-rojo {
-  background-color: #7a252c;
+  background-color: #be3d48;
 }
 
-address,
-address i,
-.card-informacion i {
-  transition: 0.3s ease-in-out;
-}
-
-time {
-  transition: 0.3s ease-in-out;
-}
-address:hover,
-address:hover i,
-.card-informacion:hover i {
-  color: #7a252c;
-}
-
-time:hover {
-  color: #7a252c;
-}
 /*--------------------Opiniones--------------------------*/
 .seccion-opiniones {
   display: flex;
@@ -522,6 +515,26 @@ i {
   #imagen-hero {
     width: 100%;
   }
+  /*------------Hover iconos---------------*/
+  
+address,
+address i,
+.card-informacion i {
+  transition: 0.3s ease-in-out;
+}
+
+time {
+  transition: 0.3s ease-in-out;
+}
+address:hover,
+address:hover i,
+.card-informacion:hover i {
+  color: #be3d48;
+}
+
+time:hover {
+  color: #be3d48;
+}
   /*-----------Opiniones------------------*/
   #iframe-calificacion {
     width: 80%;
