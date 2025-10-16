@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="l-scale=1.0" />
     <link
       rel="shortcut icon"
       href="/recursos/imagenes/iconos-logo/logoLobatoFavicon48px.ico"
@@ -18,7 +18,6 @@
         <img
           src="/recursos/imagenes/iconos-logo/lobato-logo.webp"
           alt="Lobato logo"
-          width="100px"
         />
       </a>
       <nav>
@@ -66,7 +65,11 @@
         <form action="form-busqueda" method="get" class="form-busqueda">
           <div class="busqueda-grid">
             <label for="filtrado-productos">Filtrar por</label>
-            <select class="select-busqueda" name="Filtrado" id="filtrado-productos">
+            <select
+              class="select-busqueda"
+              name="Filtrado"
+              id="filtrado-productos"
+            >
               <option value="">Seleccionar...</option>
               <option value="Promociones">Promociones</option>
               <option value="Pizzas">Pizzas</option>
@@ -84,132 +87,126 @@
           <button class="boton-buscar" type="submit">Buscar</button>
         </form>
       </section>
-      <section>
+      <section class="seccion-carta">
         <section class="seccion-principal">
           <h2>Pizzas</h2>
-          <article>
-            <img
-              src="/recursos/imagenes/productos/Pizza-mozzarella.webp"
-              alt="Pizza Mozzarella"
-              width="300px"
-            />
-            <span>Mozzarella</span>
-            <p>$11.000</p>
-          </article>
-          <article>
-            <img
-              src="/recursos/imagenes/productos/Pizza-calabresa.webp"
-              alt="Pizza Calabresa"
-              width="300px"
-            />
-            <span>Calabresa</span>
-            <p>$13.000</p>
-          </article>
-          <article>
-            <img
-              src="/recursos/imagenes/productos/Pizza-napolitana.webp"
-              alt="Pizza Napolitana"
-              width="300px"
-            />
-            <span>Napolitana</span>
-            <p>$14.000</p>
-          </article>
-          <article>
-            <img
-              src="/recursos/imagenes/productos/pizza-4_quesos.webp"
-              alt="Pizza 4 Quesos"
-              width="300px"
-            />
-            <span>4 Quesos</span>
-            <p>$15.000</p>
-          </article>
+          <section class="contenedor-productos">
+            <article>
+              <img
+                src="/recursos/imagenes/productos/Pizza-mozzarella.webp"
+                alt="Pizza Mozzarella"
+              />
+              <span>Mozzarella</span>
+              <p>$11.000</p>
+            </article>
+            <article>
+              <img
+                src="/recursos/imagenes/productos/Pizza-calabresa.webp"
+                alt="Pizza Calabresa"
+              />
+              <span>Calabresa</span>
+              <p>$13.000</p>
+            </article>
+            <article>
+              <img
+                src="/recursos/imagenes/productos/Pizza-napolitana.webp"
+                alt="Pizza Napolitana"
+              />
+              <span>Napolitana</span>
+              <p>$14.000</p>
+            </article>
+            <article>
+              <img
+                src="/recursos/imagenes/productos/pizza-4_quesos.webp"
+                alt="Pizza 4 Quesos"
+              />
+              <span>4 Quesos</span>
+              <p>$15.000</p>
+            </article>
+          </section>
         </section>
+
         <section class="seccion-principal">
           <h2>Empanadas</h2>
-          <article>
-            <img
-              src="/recursos/imagenes/productos/Empanada-criolla.webp"
-              alt="Empanada de Carne"
-              width="300px"
-            />
-            <span>Carne</span>
-            <p>$1.250</p>
-          </article>
-          <article>
-            <img
-              src="/recursos/imagenes/productos/Empanada-pollo.webp"
-              alt="Empanada de Pollo"
-              width="300px"
-            />
-            <span>Pollo</span>
-            <p>$1.250</p>
-          </article>
-          <article>
-            <img
-              src="/recursos/imagenes/productos/Empanada-verdura.webp"
-              alt="Empanada de Verdura"
-              width="300px"
-            />
-            <span>Verdura</span>
-            <p>$1.300</p>
-          </article>
+          <section class="contenedor-productos">
+            <article>
+              <img
+                src="/recursos/imagenes/productos/Empanada-criolla.webp"
+                alt="Empanada de Carne"
+              />
+              <span>Carne</span>
+              <p>$1.250</p>
+            </article>
+            <article>
+              <img
+                src="/recursos/imagenes/productos/Empanada-pollo.webp"
+                alt="Empanada de Pollo"
+              />
+              <span>Pollo</span>
+              <p>$1.250</p>
+            </article>
+            <article>
+              <img
+                src="/recursos/imagenes/productos/Empanada-verdura.webp"
+                alt="Empanada de Verdura"
+              />
+              <span>Verdura</span>
+              <p>$1.300</p>
+            </article>
+          </section>
         </section>
         <section class="seccion-principal">
           <h2>Bebidas</h2>
-          <article>
-            <img
-              src="/recursos/imagenes/productos/CocaComun.webp"
-              alt="Coca Cola Común de 1.5lt"
-              width="300px"
-            />
-            <span>Coca Cola 1.5lt</span>
-            <p>$2.500</p>
-          </article>
-          <article>
-            <img
-              src="/recursos/imagenes/productos/CocaZero.webp"
-              alt="Coca cola Zero de 1.5lt"
-              width="300px"
-            />
-            <span>Coca Cola Zero 1.5lt</span>
-            <p>$2.600</p>
-          </article>
-          <article>
-            <img
-              src="/recursos/imagenes/productos/Sprite.webp"
-              alt="Sprite de 1.5lt"
-              width="300px"
-            />
-            <span>Sprite 1.5lt</span>
-            <p>$2.000</p>
-          </article>
-          <article>
-            <img
-              src="/recursos/imagenes/productos/Fanta.webp"
-              alt="Fanta de 1.5lt"
-              width="300px"
-            />
-            <span>Fanta 1.5lt</span>
-            <p>$2.000</p>
-          </article>
-          <article>
-            <img
-              src="/recursos/imagenes/productos/lata-quilmes.webp"
-              alt="Lata Quilmes de 473ml"
-              width="300px"
-            />
-            <span>Lata Quilmes 473ml</span>
-            <p>$2.300</p>
-          </article>
-          <article>
-            <img
-              src="/recursos/imagenes/productos/Schneider.webp"
-              alt="Schneider 710ml"
-              width="300px"
-            />
-            <span>Schneider 710ml</span>
-            <p>$2.800</p>
-          </article>
+          <section class="contenedor-productos">
+            <article>
+              <img
+                src="/recursos/imagenes/productos/CocaComun.webp"
+                alt="Coca Cola Común de 1.5lt"
+              />
+              <span>Coca Cola 1.5lt</span>
+              <p>$2.500</p>
+            </article>
+            <article>
+              <img
+                src="/recursos/imagenes/productos/CocaZero.webp"
+                alt="Coca cola Zero de 1.5lt"
+              />
+              <span>Coca Cola Zero 1.5lt</span>
+              <p>$2.600</p>
+            </article>
+            <article>
+              <img
+                src="/recursos/imagenes/productos/Sprite.webp"
+                alt="Sprite de 1.5lt"
+              />
+              <span>Sprite 1.5lt</span>
+              <p>$2.000</p>
+            </article>
+            <article>
+              <img
+                src="/recursos/imagenes/productos/Fanta.webp"
+                alt="Fanta de 1.5lt"
+              />
+              <span>Fanta 1.5lt</span>
+              <p>$2.000</p>
+            </article>
+            <article>
+              <img
+                src="/recursos/imagenes/productos/lata-quilmes.webp"
+                alt="Lata Quilmes de 473ml"
+              />
+              <span>Lata Quilmes 473ml</span>
+              <p>$2.300</p>
+            </article>
+            <article>
+              <img
+                src="/recursos/imagenes/productos/Schneider.webp"
+                alt="Schneider 710ml"
+              />
+              <span>Schneider 710ml</span>
+              <p>$2.800</p>
+            </article>
+          </section>
         </section>
       </section>
       <img
@@ -219,12 +216,11 @@
       />
       <section class="seccion-principal">
         <h2 id="promos">Nuestras Promos</h2>
-        <section>
+        <section class="contenedor-productos">
           <article>
             <img
               src="/recursos/imagenes/productos/dos-pizzas-mozzarella.webp"
               alt="Dos Pizzas Mozzarella"
-              width="300px"
             />
             <span>Dos Pizzas Mozzarella</span>
             <p>$16.000</p>
@@ -233,7 +229,6 @@
             <img
               src="/recursos/imagenes/productos/promo-coca-pizza.webp"
               alt="Coca Cola de 1.5lt y Pizza"
-              width="300px"
             />
             <span>Coca 1.5lt + Pizza a elección</span>
             <p>$14.500</p>
@@ -253,7 +248,6 @@
             <img
               src="/recursos/imagenes/productos/promo-coca-empanadas.webp"
               alt="Coca Cola de 1.5lt y Empanadas"
-              width="300px"
             />
             <span>Coca 1.5lt + 1/2 docena de Empanadas a elección</span>
             <p>$10.500</p>
@@ -262,7 +256,6 @@
             <img
               src="/recursos/imagenes/productos/promo-empanadas-cerveza.webp"
               alt="2 latas de cerveza y Empanadas"
-              width="300px"
             />
             <span>2 latas de cerveza + 1/2 docena de Empanadas a elección</span>
             <p>$13.500</p>
@@ -271,7 +264,6 @@
             <img
               src="/recursos/imagenes/productos/promo-carne-verdura.webp"
               alt="Empanada de Carne y verdura"
-              width="300px"
             />
             <span>1/2 de Empanadas de Carne + 1/2 de Empanadas de Verdura</span>
             <p>$15.000</p>
