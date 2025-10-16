@@ -85,22 +85,72 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-/*-----------Menu hamburguesa----------------*/
-/* .nav-menu {
-    position: absolute;
-    top: 100%; 
-    left: 0;
-    width: 100%;
-    background-color: #444;
-    max-height: 200px; 
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-} */
+
 .cabecera-principal ul {
   display: flex;
   gap: 20px;
   justify-content: space-between;
   align-items: center;
+}
+/*-----------Menu hamburguesa mobile----------------*/
+
+.menu-mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 280px;
+  background: #004aad;
+  box-shadow: -2px 0 5px 1px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: transform 0.3s ease;
+  padding: 60px 20px 0 20px;
+}
+.cerrar-menu-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+/* ---------------------------------- */
+/* 3. Estilos de la Lista de Navegación */
+/* ---------------------------------- */
+.menu-mobile ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.menu-mobile li {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.1); /* Línea divisoria suave */
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+.menu-mobile li:last-child {
+  border-bottom: none; /* Para eliminar la línea del último elemento */
+  padding-bottom: 0;
+}
+
+.menu-mobile a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  display: block;
+  padding: 5px 0;
+  transition: color 0.2s ease;
+}
+
+.menu-mobile a:hover,
+.menu-mobile a:focus {
+  color: #be3d48;
+  font-weight: bold;
 }
 
 /*---------------------- BODY --------------------------*/
@@ -516,25 +566,25 @@ i {
     width: 100%;
   }
   /*------------Hover iconos---------------*/
-  
-address,
-address i,
-.card-informacion i {
-  transition: 0.3s ease-in-out;
-}
 
-time {
-  transition: 0.3s ease-in-out;
-}
-address:hover,
-address:hover i,
-.card-informacion:hover i {
-  color: #be3d48;
-}
+  address,
+  address i,
+  .card-informacion i {
+    transition: 0.3s ease-in-out;
+  }
 
-time:hover {
-  color: #be3d48;
-}
+  time {
+    transition: 0.3s ease-in-out;
+  }
+  address:hover,
+  address:hover i,
+  .card-informacion:hover i {
+    color: #be3d48;
+  }
+
+  time:hover {
+    color: #be3d48;
+  }
   /*-----------Opiniones------------------*/
   #iframe-calificacion {
     width: 80%;
@@ -548,5 +598,10 @@ time:hover {
   .seccion-sobre-nosotros img {
     width: 55%;
     margin: auto;
+  }
+
+  /*-----------Menu hamburguesa mobile----------------*/
+  .menu-mobile {
+    display: none;
   }
 }
