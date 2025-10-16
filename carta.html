@@ -63,23 +63,25 @@
     <main class="contenido-principal">
       <h1>Nuestras especialidades</h1>
       <section class="barra-de-busqueda">
-        <form action="filtrar_buscar" method="get">
-          <label for="filtrado-productos">Filtrar por</label>
-          <select name="Filtrado" id="filtrado-productos">
-            <option value="">Seleccionar...</option>
-            <option value="Promociones">Promociones</option>
-            <option value="Pizzas">Pizzas</option>
-            <option value="Empanadas">Empanadas</option>
-            <option value="Bebidas">Bebidas</option>
-          </select>
-          <label for="buscar-input">Buscar producto:</label>
-          <input
-            type="search"
-            name="barra-busqueda"
-            id="buscar-input"
-            placeholder="Escriba aquí el producto que desea buscar..."
-          />
-          <button type="submit">Buscar</button>
+        <form action="form-busqueda" method="get" class="form-busqueda">
+          <div class="busqueda-grid">
+            <label for="filtrado-productos">Filtrar por</label>
+            <select class="select-busqueda" name="Filtrado" id="filtrado-productos">
+              <option value="">Seleccionar...</option>
+              <option value="Promociones">Promociones</option>
+              <option value="Pizzas">Pizzas</option>
+              <option value="Empanadas">Empanadas</option>
+              <option value="Bebidas">Bebidas</option>
+            </select>
+            <label for="buscar-input">Buscar producto:</label>
+            <input
+              type="search"
+              name="barra-busqueda"
+              id="buscar-input"
+              placeholder="Escriba aquí..."
+            />
+          </div>
+          <button class="boton-buscar" type="submit">Buscar</button>
         </form>
       </section>
       <section>
