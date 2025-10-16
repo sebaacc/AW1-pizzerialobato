@@ -206,23 +206,30 @@ nav {
   padding: 5px 15px;
   border-radius: 5mm;
   width: max-content;
+  transition: 0.3s ease-in-out;
 }
 
 .card-informacion:hover .boton-rojo {
   background-color: #7a252c;
-  transition: 0.5s;
 }
 
+address,
+address i,
+.card-informacion i {
+  transition: 0.3s ease-in-out;
+}
+
+time {
+  transition: 0.3s ease-in-out;
+}
 address:hover,
 address:hover i,
 .card-informacion:hover i {
   color: #7a252c;
-  transition: 0.5s;
 }
 
 time:hover {
   color: #7a252c;
-  transition: 0.5s;
 }
 /*--------------------Opiniones--------------------------*/
 .seccion-opiniones {
@@ -319,11 +326,11 @@ time:hover {
   color: #fff;
   font-size: medium;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 
 .boton-productos:hover {
   background-color: #7a252c;
-  transition: 0.3s;
 }
 
 .linea-divisora {
@@ -435,6 +442,27 @@ i {
   nav {
     display: block;
   }
+  /*---Efecto subrayado elemento del menu-----*/
+  nav ul li {
+    position: relative; /* Clave para el efecto subrayado: NO borrar*/
+  }
+  nav ul li::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: #fff;
+    transition: width 0.2s;
+    border-radius: 2.5px;
+  }
+
+  nav ul li:hover::after {
+    width: 100%;
+  }
+  /*Fin efecto subrayado*/
+
   .menu-hamburguesa {
     display: none;
   }
@@ -447,6 +475,10 @@ i {
     margin: 0;
     justify-content: space-between;
     padding: 25px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .hijo-overlay:hover {
+    background-color: #000000d1;
   }
   .seccion-hero {
     display: flex;
