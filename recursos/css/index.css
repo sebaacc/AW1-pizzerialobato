@@ -386,15 +386,46 @@ nav {
 /* Formulario de Contacto */
 
 .formulario-pedidos {
-  display: flex;
-  flex-direction: column;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
   max-width: 600px;
   margin: 0 auto;
+  padding: 4.5%;
   background-color: #5171ff65;
 }
 
-.formulario-pedidos input,
-.formulario-pedidos select {
+.formulario-pedidos form{
+  /* display: grid;
+  grid-template-rows: 1fr; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.formulario-pedidos span{
+  font-weight: bold;
+  color: #a32c36;
+}
+
+.formulario-pedidos textarea{
+  width: 100%;
+  height: 100%;
+}
+
+
+.formulario-pedidos img{
+  width: 10%;
+  height: 10%;
+}
+
+.formulario-pedidos article{
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.formulario-pedidos input {
   padding: 5px 10px;
   font-size: inherit;
   font-family: inherit;

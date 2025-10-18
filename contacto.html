@@ -100,39 +100,56 @@
       </section>
 
       <section class="formulario-pedidos">
-        <span>Los campos marcados con "*" son OBLIGATORIOS</span>
+        <div>
+          <span>Los campos marcados con "*" son OBLIGATORIOS.</span>
+        </div>
 
         <form action="./contacto.html" method="post">
-          <img
-            src="recursos/imagenes/iconos-logo/carnet-icono.webp"
-            alt="Icono de carnet"
-          />
-          <label for="id-nombre">Nombre y apellido</label>
-          <input type="text" name="nombre" id="id-nombre" required />*
+          <article>
+            <img
+              src="recursos/imagenes/iconos-logo/carnet-icono.webp"
+              alt="Icono de carnet"
+            />
+            <label for="id-nombre">Nombre y apellido</label>
+            <input type="text" name="nombre" id="id-nombre" required />
+            <span>*</span>
 
-          <img
-            src="recursos/imagenes/iconos-logo/telefono-icono.webp"
-            alt="Icono telefono"
-          />
-          <label for="id-telelefono">Número de teléfono</label>
-          <input type="tel" name="tel" id="id-telefono" required />*
+          </article>
 
-          <img
-            src="recursos/imagenes/iconos-logo/correo-icono.webp"
-            alt="Icono de Correo"
-          />
-          <label for="id-email">Correo electrónico</label>
-          <input type="email" name="email" id="id-email" required />*
+          <article>
+            <img
+              src="recursos/imagenes/iconos-logo/telefono-icono.webp"
+              alt="Icono telefono"
+            />
+            <label for="id-telelefono">Número de teléfono</label>
+            <input type="tel" name="tel" id="id-telefono" required />
+            <span>*</span>
 
-          <img
-            src="recursos/imagenes/iconos-logo/comentario-icono.webp"
-            alt="Icono de Comentario"
-          />
-          <label for="id-mensaje"
-            >¿Algo más que debamos saber? Déjanos un comentario:</label
-          >
-          <textarea name="mensaje" id="id-mensaje"></textarea>
+          </article>
 
+          <article>
+            <img
+              src="recursos/imagenes/iconos-logo/correo-icono.webp"
+              alt="Icono de Correo"
+            />
+            <label for="id-email">Correo electrónico</label>
+            <input type="email" name="email" id="id-email" required />
+            <span>*</span>
+
+          </article>
+
+          <div>
+            <img
+              src="recursos/imagenes/iconos-logo/comentario-icono.webp"
+              alt="Icono de Comentario"
+            />
+            <label for="id-mensaje"
+              >¿Algo más que debamos saber? Déjanos un comentario:</label
+            >
+            <textarea name="mensaje" id="id-mensaje"></textarea>
+
+          </div>
+          
           <button type="submit">Enviar</button>
         </form>
       </section>
