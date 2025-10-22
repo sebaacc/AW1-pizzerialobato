@@ -63,7 +63,7 @@
     <main class="contenido-principal">
       <h1>Contactate con nosotros</h1>
       <section class="clase-prueba">
-        <div class="img">
+        <div class="imgTel">
           <img
             src="/recursos/imagenes/otros/contacto-hero.webp"
             width="200px"
@@ -71,18 +71,18 @@
           />
         </div>
 
-        <p class="p">
+        <p class="parrafo1">
           <span>Complete el formulario</span> que se encuentra debajo con los
           datos necesarios. <span>Es importante</span> que verifique bien dichos
           datos, para asegurarnos el poder contactarnos con usted correctamente.
         </p>
 
-        <p class="p2">
+        <p class="parrafo2">
           También puede comunicarse directamente con nosotros por
           <span>llamada telefónica</span> o vía <span>Whatsapp</span>:
         </p>
 
-        <div class="i">
+        <div class="icoTel">
           <img
             src="./recursos/imagenes/iconos-logo/telefono-icono.webp"
             alt="Icono de teléfono"
@@ -90,7 +90,7 @@
           <p>+54 011 3793197</p>
         </div>
 
-        <div class="i2">
+        <div class="icoWP">
           <img
             src="./recursos/imagenes/iconos-logo/whatsapp-icono.webp"
             alt="Icono de Whatsapp"
@@ -105,51 +105,51 @@
         </div>
 
         <form action="./contacto.html" method="post">
-          <article>
+          <!-- <article> -->
             <img
               src="recursos/imagenes/iconos-logo/carnet-icono.webp"
-              alt="Icono de carnet"
+              alt="Icono de carnet" class="icoNomApe"
             />
-            <label for="id-nombre">Nombre y apellido</label>
-            <input type="text" name="nombre" id="id-nombre" required />
-            <span>*</span>
+            <label for="id-nombre" class="nomApe">Nombre y apellido</label>
+            <input type="text" name="nombre" id="id-nombre" class="inputNomApe" required />
+            <span class="ast1">*</span>
 
-          </article>
+          <!-- </article> -->
 
-          <article>
+          <!-- <article> -->
             <img
               src="recursos/imagenes/iconos-logo/telefono-icono.webp"
-              alt="Icono telefono"
+              alt="Icono telefono" class="icoNumTel"
             />
-            <label for="id-telelefono">Número de teléfono</label>
-            <input type="tel" name="tel" id="id-telefono" required />
-            <span>*</span>
+            <label for="id-telelefono" class="numTel">Número de teléfono</label>
+            <input type="tel" name="tel" id="id-telefono" class="inputNumTel" required />
+            <span class="ast2">*</span>
 
-          </article>
+          <!-- </article> -->
 
-          <article>
+          <!-- <article> -->
             <img
               src="recursos/imagenes/iconos-logo/correo-icono.webp"
-              alt="Icono de Correo"
+              alt="Icono de Correo" class="icoEmail"
             />
-            <label for="id-email">Correo electrónico</label>
-            <input type="email" name="email" id="id-email" required />
-            <span>*</span>
+            <label for="id-email" class="email">Correo electrónico</label>
+            <input type="email" name="email" id="id-email" class="inputEmail" required />
+            <span class="ast3">*</span>
 
-          </article>
+          <!-- </article> -->
 
-          <div>
+          <!-- <div> -->
             <img
               src="recursos/imagenes/iconos-logo/comentario-icono.webp"
-              alt="Icono de Comentario"
+              alt="Icono de Comentario" class="icoMensaje"
             />
-            <label for="id-mensaje"
+            <label for="id-mensaje" class="mensaje"
               >¿Algo más que debamos saber? Déjanos un comentario:</label
             >
-            <textarea name="mensaje" id="id-mensaje"></textarea>
-          </div>
+            <textarea name="mensaje" id="id-mensaje" class="inputMensaje"></textarea>
+          <!-- </div> -->
           
-          <button type="submit" class="boton-productos">Enviar</button>
+          <button type="submit" class="boton-productos enviar">Enviar</button>
         </form>
       </section>
     </main>
