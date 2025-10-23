@@ -542,8 +542,8 @@ i {
   .formulario-pedidos {
     
     max-width: 670px;
-    margin: 0 auto;
-    padding: 2%;
+    margin: 0 15px;
+    padding: 4%;
     background-color: #5171ff65;
     border-radius: 15px;
   }
@@ -567,8 +567,9 @@ i {
   .inputNomApe{
     grid-area: inputNomApe;
   }
-  .ast1{
-    grid-area: ast1;
+
+  .inputNomApe input, .inputEmail input, .inputNumTel input  {
+    width: 450px;
   }
 
   .icoNumTel{
@@ -580,9 +581,6 @@ i {
   .inputNumTel{
     grid-area: inputNumTel;
   }
-  .ast2{
-    grid-area: ast2;
-  }
 
   .icoEmail{
     grid-area: icoEmail;
@@ -593,9 +591,7 @@ i {
   .inputEmail{
     grid-area: inputEmail;
   }
-  .ast3{
-    grid-area: ast3;
-  }
+
 
   .icoMensaje {
     grid-area: icoMensaje;
@@ -882,7 +878,7 @@ i {
     'icoMensaje mensaje mensaje'
     'inputMensaje inputMensaje inputMensaje'
     'enviar enviar enviar';
-  grid-template-columns: 100px 200px 210px;
+  grid-template-columns: 100px 200px 248px;
   gap: 10px ;
 }
 /*-------------------------------------*/
