@@ -50,6 +50,13 @@ a {
 }
 /*---------------------- Inicio --------------------------*/
 /*---------------------- HEADER --------------------------*/
+.logo img {
+  transition: filter 0.3s ease;
+}
+
+.logo:hover img {
+  filter: brightness(1.25) saturate(1.25);
+}
 
 .cabecera-principal {
   /* position: sticky; */
@@ -175,8 +182,6 @@ nav {
   width: ;
   height: ;
 } */
-
-
 
 .seccion-hero {
   font-weight: bold;
@@ -340,11 +345,10 @@ nav {
   height: auto;
 }
 
-
 /*---------------------- FOOTER --------------------------*/
 i {
   font-size: 45px;
-  color: #2a272a;
+  color: #ffff;
 }
 
 .pie-principal {
@@ -368,11 +372,112 @@ i {
   font-size: 35px;
   color: #ffff;
   margin: 8px 13px;
-  color: #1f1d1f;
 }
 
 .pie-principal h3 {
   margin: 10px 0px;
+}
+
+/* ---------------- Social icons: color de la marca en hover ---------------- */
+.pie-principal a.social i {
+  transition: color 0.22s ease, filter 0.22s ease, transform 0.18s ease;
+  color: #fff;
+  display: inline-block;
+}
+
+.pie-principal a.social:focus i,
+.pie-principal a.social:hover i {
+  transform: translateY(-3px);
+}
+
+.pie-principal a.instagram:hover i {
+  color: #e1306c;
+  background: linear-gradient(
+    45deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Facebook */
+.pie-principal a.facebook:hover i {
+  color: #1877f2;
+  filter: drop-shadow(0 0 6px rgba(24, 119, 242, 0.35));
+}
+
+/* Whatsapp */
+.pie-principal a.whatsapp:hover i {
+  color: #25d366;
+  filter: drop-shadow(0 0 6px rgba(37, 211, 102, 0.28));
+}
+
+.pie-principal a.social:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(81, 112, 255, 0.18);
+  border-radius: 6px;
+}
+
+/* ----------------Círculo blanco de fondo---------------- */
+.pie-principal a.social {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.pie-principal a.social i {
+  position: relative;
+  z-index: 2;
+}
+
+.pie-principal a.social::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.95);
+  width: calc(2.4em + 12px);
+  height: calc(2.4em + 12px);
+  border-radius: 50%;
+  background: #ffffff;
+  opacity: 0;
+  transition: opacity 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.pie-principal a.social:hover::before,
+.pie-principal a.social:focus::before {
+  opacity: 1;
+  transform: translate(-50%, calc(-50% - 4px)) scale(1.06);
+}
+
+.pie-principal a.instagram:hover::before {
+  box-shadow: 0 6px 20px rgba(214, 41, 118, 0.18),
+    0 0 28px rgba(79, 91, 213, 0.1);
+}
+.pie-principal a.facebook:hover::before {
+  box-shadow: 0 6px 20px rgba(24, 119, 242, 0.18),
+    0 0 28px rgba(24, 119, 242, 0.1);
+}
+.pie-principal a.whatsapp:hover::before {
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.18),
+    0 0 28px rgba(37, 211, 102, 0.1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pie-principal a.social::before,
+  .pie-principal a.social i {
+    transition: none !important;
+  }
 }
 
 /*-----------Página Carta / Filtros y búsqueda----------------*/
@@ -497,11 +602,12 @@ i {
     margin: 20px;
   }
 
-  .clase-prueba span{
+  .clase-prueba span {
     font-weight: bold;
   }
 
-  .clase-prueba span, p{
+  .clase-prueba span,
+  p {
     font-size: 15px;
   }
 
@@ -524,15 +630,15 @@ i {
     gap: 10px;
   }
 
-  .icoTel img{
+  .icoTel img {
     width: 10%;
   }
 
-  .icoWP img{
+  .icoWP img {
     width: 10%;
   }
 
-  .imgTel img{
+  .imgTel img {
     width: 50%;
     height: 20%;
   }
@@ -540,7 +646,6 @@ i {
   /* Formulario de Contacto */
 
   .formulario-pedidos {
-    
     max-width: 670px;
     margin: 0 15px;
     padding: 4%;
@@ -548,50 +653,51 @@ i {
     border-radius: 15px;
   }
 
-  .formulario-pedidos form{
+  .formulario-pedidos form {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 10px;
   }
   /*-------------------------------------*/
-  .icoNomApe{
+  .icoNomApe {
     grid-area: icoNomApe;
     justify-content: center;
   }
-  .nomApe{
+  .nomApe {
     grid-area: nomApe;
     justify-self: start;
     align-self: center;
   }
-  .inputNomApe{
+  .inputNomApe {
     grid-area: inputNomApe;
   }
 
-  .inputNomApe input, .inputEmail input, .inputNumTel input  {
+  .inputNomApe input,
+  .inputEmail input,
+  .inputNumTel input {
     width: 275px;
   }
 
-  .icoNumTel{
+  .icoNumTel {
     grid-area: icoNumTel;
   }
-  .numTel{
+  .numTel {
     grid-area: numTel;
   }
-  .inputNumTel{
+  .inputNumTel {
     grid-area: inputNumTel;
   }
 
-  .icoEmail{
+  .icoEmail {
     grid-area: icoEmail;
   }
-  .email{
+  .email {
     grid-area: email;
   }
-  .inputEmail{
+  .inputEmail {
     grid-area: inputEmail;
   }
-
 
   .icoMensaje {
     grid-area: icoMensaje;
@@ -609,7 +715,7 @@ i {
     resize: vertical;
   }
 
-  .enviar{
+  .enviar {
     grid-area: enviar;
   }
 
@@ -622,22 +728,21 @@ i {
   }
 
   /*---------------------------------*/
-  .formulario-pedidos span{
+  .formulario-pedidos span {
     font-weight: bold;
     color: #a32c36;
   }
 
-  .formulario-pedidos textarea{
+  .formulario-pedidos textarea {
     width: 100%;
     height: 400px;
   }
-
 
   /* .formulario-pedidos img{
     width: 40%;  
   }  */
 
-  .formulario-pedidos article{
+  .formulario-pedidos article {
     display: flex;
     gap: 20px;
     text-align: center;
@@ -660,15 +765,8 @@ i {
     color: white;
   } */
 
-
   /*-------------------------------*/
-
-
-
 }
-
-
-
 
 /* -------------------------------------------------------------------------------------- */
 
@@ -721,7 +819,7 @@ i {
   .seccion-hero {
     display: flex;
     align-items: center;
-    /*justify-content: center;*/
+    justify-content: center;
   }
   #imagen-hero {
     width: 100%;
@@ -754,6 +852,12 @@ i {
   .seccion-principal article {
     width: 300px;
   }
+  /*----------------Footer--------------------------*/
+
+  .pie-principal p {
+    font-size: 16px;
+  }
+
   /*------------Hover iconos---------------*/
 
   address,
@@ -794,6 +898,9 @@ i {
     width: 55%;
     margin: auto;
   }
+  .seccion-sobre-nosotros p {
+    font-size: 20px;
+  }
 
   /*-----------Menu hamburguesa mobile----------------*/
   .menu-mobile {
@@ -802,195 +909,193 @@ i {
 
   /*----------------------Página Contacto----------------------*/
 
-.clase-prueba {
-  display: grid;
-  grid-template-areas:
-    'imgTel parrafo1'
-    'imgTel parrafo2'
-    'imgTel icoTel'
-    'imgTel icoWP';
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  margin: 20px 100px;
-  gap: 20px;
-}
+  .clase-prueba {
+    display: grid;
+    grid-template-areas:
+      'imgTel parrafo1'
+      'imgTel parrafo2'
+      'imgTel icoTel'
+      'imgTel icoWP';
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    margin: 20px 100px;
+    gap: 20px;
+  }
 
-.clase-prueba span{
-  font-weight: bold;
-}
+  .clase-prueba span {
+    font-weight: bold;
+  }
 
-.clase-prueba span, p{
-  font-size: 25px;
-}
+  .clase-prueba span,
+  p {
+    font-size: 25px;
+  }
 
-.imgTel {
-  display: flex;
-  grid-area: imgTel
-}
+  .imgTel {
+    display: flex;
+    grid-area: imgTel;
+  }
 
-.parrafo1 {
-  grid-area: parrafo1;
-}
+  .imgTel img {
+    border-radius: 8px;
+  }
 
-.parrafo2 {
-  grid-area: parrafo2;
-}
+  .parrafo1 {
+    grid-area: parrafo1;
+  }
 
-.icoTel {
-  grid-area: icoTel;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+  .parrafo2 {
+    grid-area: parrafo2;
+  }
 
-.icoWP {
-  grid-area: icoWP;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+  .icoTel {
+    grid-area: icoTel;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
 
-.icoTel img{
-  width: 3%;
-}
+  .icoWP {
+    grid-area: icoWP;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
 
-.icoWP img{
-  width: 3%;
-}
+  .icoTel img {
+    width: 3%;
+  }
 
-/* Formulario de Contacto */
+  .icoWP img {
+    width: 3%;
+  }
 
-.formulario-pedidos {
-  
-  max-width: 670px;
-  margin: 0 auto;
-  padding: 2%;
-  background-color: #5171ff65;
-  border-radius: 15px;
-}
+  /* Formulario de Contacto */
 
-.formulario-pedidos form{
-  display: grid;
-  grid-template-areas:
-    'icoNomApe nomApe inputNomApe'
-    'icoNumTel numTel inputNumTel'
-    'icoEmail email inputEmail'
-    'icoMensaje mensaje mensaje'
-    'inputMensaje inputMensaje inputMensaje'
-    'enviar enviar enviar';
-  grid-template-columns: 100px 200px 248px;
-  gap: 10px ;
-}
-/*-------------------------------------*/
-.icoNomApe{
-  grid-area: icoNomApe;
-  justify-content: center;
-}
-.NomApe{
-  grid-area: nomApe;
-  justify-self: start;
-  align-self: center;
-}
-.inputNomApe{
-  display: flex;
-  grid-area: inputNomApe;
-}
-.ast1{
-  grid-area: ast1;
-}
+  .formulario-pedidos {
+    max-width: 670px;
+    margin: 0 auto;
+    padding: 2%;
+    background-color: #5171ff65;
+    border-radius: 15px;
+  }
 
-.icoNumTel{
-  grid-area: icoNumTel;
-}
-.NumTel{
-  grid-area: numTel;
-}
-.inputNumTel{
-  display: flex;
-  grid-area: inputNumTel;
-}
+  .formulario-pedidos form {
+    display: grid;
+    grid-template-areas:
+      'icoNomApe nomApe inputNomApe'
+      'icoNumTel numTel inputNumTel'
+      'icoEmail email inputEmail'
+      'icoMensaje mensaje mensaje'
+      'inputMensaje inputMensaje inputMensaje'
+      'enviar enviar enviar';
+    grid-template-columns: 100px 200px 248px;
+    gap: 10px;
+  }
+  /*-------------------------------------*/
+  .icoNomApe {
+    grid-area: icoNomApe;
+    justify-content: center;
+  }
+  .NomApe {
+    grid-area: nomApe;
+    justify-self: start;
+    align-self: center;
+  }
+  .inputNomApe {
+    display: flex;
+    grid-area: inputNomApe;
+  }
+  .ast1 {
+    grid-area: ast1;
+  }
 
-.icoEmail{
-  grid-area: icoEmail;
-}
-.email{
-  grid-area: email;
-}
-.inputEmail{
-  display: flex;
-  grid-area: inputEmail;
-}
+  .icoNumTel {
+    grid-area: icoNumTel;
+  }
+  .NumTel {
+    grid-area: numTel;
+  }
+  .inputNumTel {
+    display: flex;
+    grid-area: inputNumTel;
+  }
 
+  .icoEmail {
+    grid-area: icoEmail;
+  }
+  .email {
+    grid-area: email;
+  }
+  .inputEmail {
+    display: flex;
+    grid-area: inputEmail;
+  }
 
-.icoMensaje {
-  grid-area: icoMensaje;
-}
+  .icoMensaje {
+    grid-area: icoMensaje;
+  }
 
-.mensaje {
-  grid-area: mensaje;
-  justify-self: start;
-  align-self: center;
-}
+  .mensaje {
+    grid-area: mensaje;
+    justify-self: start;
+    align-self: center;
+  }
 
-.inputMensaje {
-  grid-area: inputMensaje;
-  width: 100%;
-  resize: vertical;
-}
+  .inputMensaje {
+    grid-area: inputMensaje;
+    width: 100%;
+    resize: vertical;
+  }
 
-.enviar{
-  grid-area: enviar;
-}
+  .enviar {
+    grid-area: enviar;
+  }
 
-.icoNomApe,
-.icoNumTel,
-.icoEmail,
-.icoMensaje {
-  justify-self: center;
-}
+  .icoNomApe,
+  .icoNumTel,
+  .icoEmail,
+  .icoMensaje {
+    justify-self: center;
+  }
 
-/*---------------------------------*/
-.formulario-pedidos span{
-  font-weight: bold;
-  color: #a32c36;
-}
+  /*---------------------------------*/
+  .formulario-pedidos span {
+    font-weight: bold;
+    color: #a32c36;
+  }
 
-.formulario-pedidos textarea{
-  width: 100%;
-  height: 400px;
-}
+  .formulario-pedidos textarea {
+    width: 100%;
+    height: 400px;
+  }
 
+  .formulario-pedidos img {
+    width: 40%;
+  }
 
-.formulario-pedidos img{
-  width: 40%;  
-} 
+  .formulario-pedidos article {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 7px;
+  }
 
-.formulario-pedidos article{
-  display: flex;
-  gap: 20px;
-  text-align: center;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 7px;
-}
+  .formulario-pedidos input {
+    padding: 5px 10px;
+    font-size: inherit;
+    font-family: inherit;
+    /* margin-bottom: 15px; */
+  }
 
-.formulario-pedidos input {
-  padding: 5px 10px;
-  font-size: inherit;
-  font-family: inherit;
-  /* margin-bottom: 15px; */
-}
-
-/* .boton-rojo button {
+  /* .boton-rojo button {
   padding: 10px;
   margin: 15px 0;
   font-size: inherit;
   color: white;
 } */
 
-
-/*-------------------------------*/
-
-
-
+  /*-------------------------------*/
 }
