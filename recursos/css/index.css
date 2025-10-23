@@ -176,205 +176,7 @@ nav {
   height: ;
 } */
 
-/*----------------------Página Contacto----------------------*/
 
-.clase-prueba {
-  display: grid;
-  grid-template-areas:
-    'imgTel parrafo1'
-    'imgTel parrafo2'
-    'imgTel icoTel'
-    'imgTel icoWP';
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  margin: 20px 100px;
-  gap: 20px;
-}
-
-.clase-prueba span{
-  font-weight: bold;
-}
-
-.clase-prueba span, p{
-  font-size: 25px;
-}
-
-.imgTel {
-  display: flex;
-  grid-area: imgTel
-}
-
-.parrafo1 {
-  grid-area: parrafo1;
-}
-
-.parrafo2 {
-  grid-area: parrafo2;
-}
-
-.icoTel {
-  grid-area: icoTel;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.icoWP {
-  grid-area: icoWP;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.icoTel img{
-  width: 3%;
-}
-
-.icoWP img{
-  width: 3%;
-}
-
-/* Formulario de Contacto */
-
-.formulario-pedidos {
-  
-  max-width: 670px;
-  margin: 0 auto;
-  padding: 2%;
-  background-color: #5171ff65;
-  border-radius: 15px;
-}
-
-.formulario-pedidos form{
-  display: grid;
-  grid-template-areas:
-    'icoNomApe nomApe inputNomApe ast1'
-    'icoNumTel numTel inputNumTel ast2'
-    'icoEmail email inputEmail ast3'
-    'icoMensaje mensaje mensaje mensaje'
-    'inputMensaje inputMensaje inputMensaje inputMensaje'
-    'enviar enviar enviar enviar';
-  grid-template-columns: 100px 200px 210px 20px;
-  gap: 10px ;
-  /* align-items: center;
-  justify-items: center; */
-  /* display: flex;
-  flex-direction: column;
-  flex-wrap: wrap; */
-  
-  
-}
-/*-------------------------------------*/
-.icoNomApe{
-  grid-area: icoNomApe;
-  justify-content: center;
-}
-.NomApe{
-  grid-area: nomApe;
-  justify-self: start;
-  align-self: center;
-}
-.inputNomApe{
-  grid-area: inputNomApe;
-}
-.ast1{
-  grid-area: ast1;
-}
-
-.icoNumTel{
-  grid-area: icoNumTel;
-}
-.NumTel{
-  grid-area: numTel;
-}
-.inputNumTel{
-  grid-area: inputNumTel;
-}
-.ast2{
-  grid-area: ast2;
-}
-
-.icoEmail{
-  grid-area: icoEmail;
-}
-.email{
-  grid-area: email;
-}
-.inputEmail{
-  grid-area: inputEmail;
-}
-.ast3{
-  grid-area: ast3;
-}
-
-.icoMensaje {
-  grid-area: icoMensaje;
-}
-
-.mensaje {
-  grid-area: mensaje;
-  justify-self: start;
-  align-self: center;
-}
-
-.inputMensaje {
-  grid-area: inputMensaje;
-  width: 100%;
-  resize: vertical;
-}
-
-.enviar{
-  grid-area: enviar;
-}
-
-.icoNomApe,
-.icoNumTel,
-.icoEmail,
-.icoMensaje {
-  justify-self: center;
-}
-
-/*---------------------------------*/
-.formulario-pedidos span{
-  font-weight: bold;
-  color: #a32c36;
-}
-
-.formulario-pedidos textarea{
-  width: 100%;
-  height: 400px;
-}
-
-
-.formulario-pedidos img{
-  width: 40%;  
-} 
-
-.formulario-pedidos article{
-  display: flex;
-  gap: 20px;
-  text-align: center;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 7px;
-}
-
-.formulario-pedidos input {
-  padding: 5px 10px;
-  font-size: inherit;
-  font-family: inherit;
-  /* margin-bottom: 15px; */
-}
-
-/* .boton-rojo button {
-  padding: 10px;
-  margin: 15px 0;
-  font-size: inherit;
-  color: white;
-} */
-
-
-/*-------------------------------*/
 
 .seccion-hero {
   font-weight: bold;
@@ -683,7 +485,194 @@ i {
     background-image: url('/recursos/imagenes/otros/portada-Inicio-mobile.webp');
     height: 480px;
   }
+
+  /*----------------------Página Contacto----------------------*/
+
+  .clase-prueba {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    gap: 10px;
+    margin: 20px;
+  }
+
+  .clase-prueba span{
+    font-weight: bold;
+  }
+
+  .clase-prueba span, p{
+    font-size: 15px;
+  }
+
+  .imgTel {
+    display: flex;
+    justify-content: center;
+  }
+
+  .icoTel {
+    grid-area: icoTel;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .icoWP {
+    grid-area: icoWP;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .icoTel img{
+    width: 10%;
+  }
+
+  .icoWP img{
+    width: 10%;
+  }
+
+  .imgTel img{
+    width: 50%;
+    height: 20%;
+  }
+
+  /* Formulario de Contacto */
+
+  .formulario-pedidos {
+    
+    max-width: 670px;
+    margin: 0 auto;
+    padding: 2%;
+    background-color: #5171ff65;
+    border-radius: 15px;
+  }
+
+  .formulario-pedidos form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  /*-------------------------------------*/
+  .icoNomApe{
+    grid-area: icoNomApe;
+    justify-content: center;
+  }
+  .nomApe{
+    grid-area: nomApe;
+    justify-self: start;
+    align-self: center;
+  }
+  .inputNomApe{
+    grid-area: inputNomApe;
+  }
+  .ast1{
+    grid-area: ast1;
+  }
+
+  .icoNumTel{
+    grid-area: icoNumTel;
+  }
+  .numTel{
+    grid-area: numTel;
+  }
+  .inputNumTel{
+    grid-area: inputNumTel;
+  }
+  .ast2{
+    grid-area: ast2;
+  }
+
+  .icoEmail{
+    grid-area: icoEmail;
+  }
+  .email{
+    grid-area: email;
+  }
+  .inputEmail{
+    grid-area: inputEmail;
+  }
+  .ast3{
+    grid-area: ast3;
+  }
+
+  .icoMensaje {
+    grid-area: icoMensaje;
+  }
+
+  .mensaje {
+    grid-area: mensaje;
+    justify-self: start;
+    align-self: center;
+  }
+
+  .inputMensaje {
+    grid-area: inputMensaje;
+    width: 100%;
+    resize: vertical;
+  }
+
+  .enviar{
+    grid-area: enviar;
+  }
+
+  .icoNomApe,
+  .icoNumTel,
+  .icoEmail,
+  .icoMensaje {
+    /* justify-self: center; */
+    width: 10%;
+  }
+
+  /*---------------------------------*/
+  .formulario-pedidos span{
+    font-weight: bold;
+    color: #a32c36;
+  }
+
+  .formulario-pedidos textarea{
+    width: 100%;
+    height: 400px;
+  }
+
+
+  /* .formulario-pedidos img{
+    width: 40%;  
+  }  */
+
+  .formulario-pedidos article{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 7px;
+  }
+
+  .formulario-pedidos input {
+    padding: 5px 10px;
+    font-size: inherit;
+    font-family: inherit;
+    /* margin-bottom: 15px; */
+  }
+
+  /* .boton-rojo button {
+    padding: 10px;
+    margin: 15px 0;
+    font-size: inherit;
+    color: white;
+  } */
+
+
+  /*-------------------------------*/
+
+
+
 }
+
+
+
 
 /* -------------------------------------------------------------------------------------- */
 
@@ -814,4 +803,198 @@ i {
   .menu-mobile {
     display: none;
   }
+
+  /*----------------------Página Contacto----------------------*/
+
+.clase-prueba {
+  display: grid;
+  grid-template-areas:
+    'imgTel parrafo1'
+    'imgTel parrafo2'
+    'imgTel icoTel'
+    'imgTel icoWP';
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  margin: 20px 100px;
+  gap: 20px;
+}
+
+.clase-prueba span{
+  font-weight: bold;
+}
+
+.clase-prueba span, p{
+  font-size: 25px;
+}
+
+.imgTel {
+  display: flex;
+  grid-area: imgTel
+}
+
+.parrafo1 {
+  grid-area: parrafo1;
+}
+
+.parrafo2 {
+  grid-area: parrafo2;
+}
+
+.icoTel {
+  grid-area: icoTel;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icoWP {
+  grid-area: icoWP;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icoTel img{
+  width: 3%;
+}
+
+.icoWP img{
+  width: 3%;
+}
+
+/* Formulario de Contacto */
+
+.formulario-pedidos {
+  
+  max-width: 670px;
+  margin: 0 auto;
+  padding: 2%;
+  background-color: #5171ff65;
+  border-radius: 15px;
+}
+
+.formulario-pedidos form{
+  display: grid;
+  grid-template-areas:
+    'icoNomApe nomApe inputNomApe'
+    'icoNumTel numTel inputNumTel'
+    'icoEmail email inputEmail'
+    'icoMensaje mensaje mensaje'
+    'inputMensaje inputMensaje inputMensaje'
+    'enviar enviar enviar';
+  grid-template-columns: 100px 200px 210px;
+  gap: 10px ;
+}
+/*-------------------------------------*/
+.icoNomApe{
+  grid-area: icoNomApe;
+  justify-content: center;
+}
+.NomApe{
+  grid-area: nomApe;
+  justify-self: start;
+  align-self: center;
+}
+.inputNomApe{
+  display: flex;
+  grid-area: inputNomApe;
+}
+.ast1{
+  grid-area: ast1;
+}
+
+.icoNumTel{
+  grid-area: icoNumTel;
+}
+.NumTel{
+  grid-area: numTel;
+}
+.inputNumTel{
+  display: flex;
+  grid-area: inputNumTel;
+}
+
+.icoEmail{
+  grid-area: icoEmail;
+}
+.email{
+  grid-area: email;
+}
+.inputEmail{
+  display: flex;
+  grid-area: inputEmail;
+}
+
+
+.icoMensaje {
+  grid-area: icoMensaje;
+}
+
+.mensaje {
+  grid-area: mensaje;
+  justify-self: start;
+  align-self: center;
+}
+
+.inputMensaje {
+  grid-area: inputMensaje;
+  width: 100%;
+  resize: vertical;
+}
+
+.enviar{
+  grid-area: enviar;
+}
+
+.icoNomApe,
+.icoNumTel,
+.icoEmail,
+.icoMensaje {
+  justify-self: center;
+}
+
+/*---------------------------------*/
+.formulario-pedidos span{
+  font-weight: bold;
+  color: #a32c36;
+}
+
+.formulario-pedidos textarea{
+  width: 100%;
+  height: 400px;
+}
+
+
+.formulario-pedidos img{
+  width: 40%;  
+} 
+
+.formulario-pedidos article{
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 7px;
+}
+
+.formulario-pedidos input {
+  padding: 5px 10px;
+  font-size: inherit;
+  font-family: inherit;
+  /* margin-bottom: 15px; */
+}
+
+/* .boton-rojo button {
+  padding: 10px;
+  margin: 15px 0;
+  font-size: inherit;
+  color: white;
+} */
+
+
+/*-------------------------------*/
+
+
+
 }
