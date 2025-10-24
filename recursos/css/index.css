@@ -216,6 +216,25 @@ nav {
   width: 75%;
 }
 
+/* .hijo-overlay2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 8px;
+  background-color: #000000be;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  justify-content: space-evenly;
+  width: 30%;
+}
+
+.hijo-overlay2 li a {
+  display: flex;
+  justify-content: space-evenly;
+} */
+
+
+
 .hijo-overlay i {
   color: #fff;
 }
