@@ -103,7 +103,7 @@ nav {
 
 .menu-mobile {
   /*esto tendría que activarse en JS con el boton del menú hamburguesa*/
-  /*display: none; */
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
