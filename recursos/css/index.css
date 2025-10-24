@@ -102,8 +102,8 @@ nav {
 /*-----------Menu hamburguesa mobile----------------*/
 
 .menu-mobile {
-  display: none; /*sacar*/
-
+  /*esto tendría que activarse en JS con el boton del menú hamburguesa*/
+  /*display: none; */
   position: fixed;
   top: 0;
   right: 0;
@@ -121,7 +121,6 @@ nav {
   color: #fff;
   font-size: 1.5rem;
   cursor: pointer;
-  padding: 10px;
   margin-bottom: 20px;
   line-height: 1;
 }
@@ -620,9 +619,12 @@ i {
   }
   .seccion-hero {
     background-image: url('/recursos/imagenes/otros/portada-Inicio-mobile.webp');
-    height: 480px;
+    height: 500px;
   }
 
+  .card-informacion {
+    text-align: center;
+  }
   /*----------------------Página Contacto----------------------*/
 
   .contacto-guia {
