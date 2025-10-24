@@ -540,7 +540,7 @@ i {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5% 10%;
+  margin: 3% 10%;
   text-align: justify;
   padding: 15px;
   color: #fff;
@@ -593,7 +593,7 @@ i {
 
   /*----------------------Página Contacto----------------------*/
 
-  .clase-prueba {
+  .contacto-guia {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -602,50 +602,54 @@ i {
     margin: 20px;
   }
 
-  .clase-prueba span {
+  .contacto-guia span {
     font-weight: bold;
   }
 
-  .clase-prueba span,
+  .contacto-guia span,
   p {
     font-size: 15px;
   }
 
-  .imgTel {
+  .div-img-tel {
     display: flex;
     justify-content: center;
   }
 
-  .icoTel {
+  .ico-tel {
     grid-area: icoTel;
     display: flex;
     align-items: center;
     gap: 10px;
   }
 
-  .icoWP {
+  .ico-wp {
     grid-area: icoWP;
     display: flex;
     align-items: center;
     gap: 10px;
   }
 
-  .icoTel img {
+  .div-img-tel img {
     width: 10%;
   }
 
-  .icoWP img {
+  .ico-tel img{
     width: 10%;
   }
 
-  .imgTel img {
+  .ico-wp img {
+    width: 10%;
+  }
+
+  .div-img-tel img {
     width: 50%;
     height: 20%;
   }
 
   /* Formulario de Contacto */
 
-  .formulario-pedidos {
+  .formulario-contacto {
     max-width: 670px;
     margin: 0 15px;
     padding: 4%;
@@ -653,53 +657,53 @@ i {
     border-radius: 15px;
   }
 
-  .formulario-pedidos form {
+  .formulario-contacto form {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 10px;
   }
   /*-------------------------------------*/
-  .icoNomApe {
+  .ico-nom-ape {
     grid-area: icoNomApe;
     justify-content: center;
   }
-  .nomApe {
+  .nom-ape {
     grid-area: nomApe;
     justify-self: start;
     align-self: center;
   }
-  .inputNomApe {
+  .input-nom-ape {
     grid-area: inputNomApe;
   }
 
-  .inputNomApe input,
-  .inputEmail input,
-  .inputNumTel input {
+  .input-nom-ape input,
+  .input-email input,
+  .input-num-tel input {
     width: 275px;
   }
 
-  .icoNumTel {
+  .ico-num-tel {
     grid-area: icoNumTel;
   }
-  .numTel {
+  .num-tel {
     grid-area: numTel;
   }
-  .inputNumTel {
+  .input-num-tel {
     grid-area: inputNumTel;
   }
 
-  .icoEmail {
+  .ico-email {
     grid-area: icoEmail;
   }
   .email {
     grid-area: email;
   }
-  .inputEmail {
+  .input-email {
     grid-area: inputEmail;
   }
 
-  .icoMensaje {
+  .ico-mensaje {
     grid-area: icoMensaje;
   }
 
@@ -709,7 +713,7 @@ i {
     align-self: center;
   }
 
-  .inputMensaje {
+  .input-mensaje {
     grid-area: inputMensaje;
     width: 100%;
     resize: vertical;
@@ -719,28 +723,24 @@ i {
     grid-area: enviar;
   }
 
-  .icoNomApe,
-  .icoNumTel,
-  .icoEmail,
-  .icoMensaje {
+  .ico-nom-ape,
+  .ico-num-tel,
+  .ico-email,
+  .ico-mensaje {
     /* justify-self: center; */
     width: 10%;
   }
 
   /*---------------------------------*/
-  .formulario-pedidos span {
+  .formulario-contacto span {
     font-weight: bold;
     color: #a32c36;
   }
 
-  .formulario-pedidos textarea {
+  .formulario-contacto textarea {
     width: 100%;
     height: 400px;
   }
-
-  /* .formulario-pedidos img{
-    width: 40%;  
-  }  */
 
   .formulario-pedidos article {
     display: flex;
@@ -755,16 +755,7 @@ i {
     padding: 5px 10px;
     font-size: inherit;
     font-family: inherit;
-    /* margin-bottom: 15px; */
   }
-
-  /* .boton-rojo button {
-    padding: 10px;
-    margin: 15px 0;
-    font-size: inherit;
-    color: white;
-  } */
-
   /*-------------------------------*/
 }
 
@@ -909,7 +900,7 @@ i {
 
   /*----------------------Página Contacto----------------------*/
 
-  .clase-prueba {
+  .contacto-guia {
     display: grid;
     grid-template-areas:
       'imgTel parrafo1'
@@ -922,57 +913,59 @@ i {
     gap: 20px;
   }
 
-  .clase-prueba span {
+  .contacto-guia span {
     font-weight: bold;
   }
 
-  .clase-prueba span,
+  .contacto-guia span,
   p {
     font-size: 25px;
   }
 
-  .imgTel {
+  .div-img-tel {
     display: flex;
     grid-area: imgTel;
   }
 
-  .imgTel img {
+  .div-img-tel img {
     border-radius: 8px;
+    width: 200px;
+    height: 300px;
   }
 
-  .parrafo1 {
+  .contacto-instrucciones {
     grid-area: parrafo1;
   }
 
-  .parrafo2 {
+  .contacto-opciones {
     grid-area: parrafo2;
   }
 
-  .icoTel {
+  .ico-tel {
     grid-area: icoTel;
     display: flex;
     align-items: center;
     gap: 10px;
   }
 
-  .icoWP {
+  .ico-wp {
     grid-area: icoWP;
     display: flex;
     align-items: center;
     gap: 10px;
   }
 
-  .icoTel img {
+  .ico-tel img {
     width: 3%;
   }
 
-  .icoWP img {
+  .ico-wp img {
     width: 3%;
   }
 
   /* Formulario de Contacto */
 
-  .formulario-pedidos {
+  .formulario-contacto {
     max-width: 670px;
     margin: 0 auto;
     padding: 2%;
@@ -980,7 +973,7 @@ i {
     border-radius: 15px;
   }
 
-  .formulario-pedidos form {
+  .formulario-contacto form {
     display: grid;
     grid-template-areas:
       'icoNomApe nomApe inputNomApe'
@@ -991,48 +984,46 @@ i {
       'enviar enviar enviar';
     grid-template-columns: 100px 200px 248px;
     gap: 10px;
+    justify-content: center;
   }
   /*-------------------------------------*/
-  .icoNomApe {
+  .ico-nom-ape {
     grid-area: icoNomApe;
     justify-content: center;
   }
-  .NomApe {
+  .nom-ape {
     grid-area: nomApe;
     justify-self: start;
     align-self: center;
   }
-  .inputNomApe {
+  .input-nom-ape {
     display: flex;
     grid-area: inputNomApe;
   }
-  .ast1 {
-    grid-area: ast1;
-  }
 
-  .icoNumTel {
+  .ico-num-tel {
     grid-area: icoNumTel;
   }
-  .NumTel {
+  .num-tel {
     grid-area: numTel;
   }
-  .inputNumTel {
+  .input-num-tel {
     display: flex;
     grid-area: inputNumTel;
   }
 
-  .icoEmail {
+  .ico-email {
     grid-area: icoEmail;
   }
   .email {
     grid-area: email;
   }
-  .inputEmail {
+  .input-email {
     display: flex;
     grid-area: inputEmail;
   }
 
-  .icoMensaje {
+  .ico-mensaje {
     grid-area: icoMensaje;
   }
 
@@ -1042,7 +1033,7 @@ i {
     align-self: center;
   }
 
-  .inputMensaje {
+  .input-mensaje {
     grid-area: inputMensaje;
     width: 100%;
     resize: vertical;
@@ -1052,50 +1043,33 @@ i {
     grid-area: enviar;
   }
 
-  .icoNomApe,
-  .icoNumTel,
-  .icoEmail,
-  .icoMensaje {
+  .ico-nom-ape,
+  .ico-num-tel,
+  .ico-email,
+  .ico-mensaje {
     justify-self: center;
   }
 
   /*---------------------------------*/
-  .formulario-pedidos span {
+  .formulario-contacto span {
     font-weight: bold;
     color: #a32c36;
   }
 
-  .formulario-pedidos textarea {
+  .formulario-contacto textarea {
     width: 100%;
     height: 400px;
   }
 
-  .formulario-pedidos img {
+  .formulario-contacto img {
     width: 40%;
   }
 
-  .formulario-pedidos article {
-    display: flex;
-    gap: 20px;
-    text-align: center;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 7px;
-  }
-
-  .formulario-pedidos input {
+  .formulario-contacto input {
     padding: 5px 10px;
     font-size: inherit;
     font-family: inherit;
-    /* margin-bottom: 15px; */
   }
-
-  /* .boton-rojo button {
-  padding: 10px;
-  margin: 15px 0;
-  font-size: inherit;
-  color: white;
-} */
 
   /*-------------------------------*/
 }
