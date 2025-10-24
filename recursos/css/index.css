@@ -4,11 +4,6 @@
   src: url(./fonts/Roboto-Regular.ttf);
 }
 
-/* @font-face {
-    font-family: "Satisfy";
-    src: url(./fonts/Satisfy-Regular.ttf);
-} */
-
 /* Modelo de caja alternativo */
 * {
   box-sizing: border-box;
@@ -177,11 +172,6 @@ nav {
   gap: 30px;
 }
 
-/* .img-contacto {
-  width: ;
-  height: ;
-} */
-
 .seccion-hero {
   font-weight: bold;
   width: 100%;
@@ -228,23 +218,6 @@ nav {
   width: 75%;
 }
 
-/* .hijo-overlay2 {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  border-radius: 8px;
-  background-color: #000000be;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  padding: 15px;
-  justify-content: space-evenly;
-  width: 30%;
-}
-
-.hijo-overlay2 li a {
-  display: flex;
-  justify-content: space-evenly;
-} */
-
 .hijo-overlay i {
   color: #fff;
 }
@@ -288,6 +261,7 @@ nav {
   width: 80%;
   height: 265px;
 }
+
 /* Clases para las secciones del main */
 
 /*----------------*/
@@ -701,6 +675,11 @@ i {
     flex-direction: column;
     gap: 10px;
   }
+
+  .campos-obligatorios{
+    margin-bottom: 10px;
+  }
+
   /*-------------------------------------*/
   .ico-nom-ape {
     grid-area: icoNomApe;
@@ -765,7 +744,6 @@ i {
   .ico-num-tel,
   .ico-email,
   .ico-mensaje {
-    /* justify-self: center; */
     width: 10%;
   }
 
@@ -918,6 +896,11 @@ i {
     background-color: #be3d48;
   }
 
+  .barra-de-busqueda{
+    margin: 5% 10%;
+    margin-top: 2%;
+  }
+
   /*-----------Sobre Nosotros--------------*/
   .seccion-sobre-nosotros img:hover {
     transform: scale(1.01);
@@ -948,6 +931,7 @@ i {
     grid-template-columns: auto;
     grid-template-rows: auto;
     margin: 20px 100px;
+    margin-bottom: 50px;
     gap: 20px;
   }
 
@@ -1024,6 +1008,11 @@ i {
     gap: 10px;
     justify-content: center;
   }
+
+   .campos-obligatorios{
+    margin-bottom: 10px;
+  }
+
   /*-------------------------------------*/
   .ico-nom-ape {
     grid-area: icoNomApe;
