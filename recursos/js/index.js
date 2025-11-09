@@ -1,7 +1,21 @@
-import pizzas from './store.js'
-import {renderizarPizzas} from './vista.js'
+import productos from './store.js'
+import { renderizarProductos } from './vista.js'
 
-const $contenedor = document.getElementById('contenedor-pizzas')
-// const $contenedor = document.querySelector('#contenedor-pizzas')
 
-renderizarPizzas(pizzas, $contenedor)
+const $contenedorPizzas = document.querySelector('#contenedor-pizzas')
+
+const $contenedorEmpanadas = document.querySelector('#contenedor-empanadas')
+
+const $contenedorBebidas = document.querySelector('#contenedor-bebidas')
+
+const $contenedorPromociones = document.querySelector('#contenedor-promociones')
+
+
+renderizarProductos(productos.pizzas, $contenedorPizzas)
+
+renderizarProductos(productos.empanadas, $contenedorEmpanadas)
+
+renderizarProductos(productos.bebidas, $contenedorBebidas)
+
+renderizarProductos(productos.promociones, $contenedorPromociones)
+

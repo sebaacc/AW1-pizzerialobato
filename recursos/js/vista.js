@@ -1,22 +1,22 @@
-function renderizarPizzas(arregloPizzas, $contenedor) {
+function renderizarProductos(arregloProductos, $refContenedor) {
     let html = ''
-    arregloPizzas.forEach(pizza => {
+    arregloProductos.forEach((producto) => {
         const plantilla = `
         <article>
               <img
-                src="${pizza.imagen.src}"
-                alt="${pizza.imagen.alt}"
+                src="${producto.imagen.src}"
+                alt="${producto.imagen.alt}"
               />
-              <span>${pizza.nombre}</span>
-              <p>$${pizza.precio}</p>
+              <span>${producto.nombre}</span>
+              <p>$${producto.precio}</p>
         </article>
         `
         html += plantilla
-    })
+    });
     
-    $contenedor.innerHTML = html
+    $refContenedor.innerHTML = html
 }
 
 
 
-export { renderizarPizzas }
+export { renderizarProductos }
