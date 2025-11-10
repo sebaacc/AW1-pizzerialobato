@@ -1,5 +1,6 @@
-import productos from './store.js'
-import { renderizarProductos } from './vista.js'
+import productos from '../productos.js'
+import promociones from '../promociones.js'
+import { renderizarProductos } from '../funciones.js'
 
 
 const $contenedorPizzas = document.querySelector('#contenedor-pizzas')
@@ -17,5 +18,4 @@ renderizarProductos(productos.empanadas, $contenedorEmpanadas)
 
 renderizarProductos(productos.bebidas, $contenedorBebidas)
 
-renderizarProductos(productos.promociones, $contenedorPromociones)
-
+renderizarProductos(promociones, $contenedorPromociones)
