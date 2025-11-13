@@ -76,25 +76,34 @@
               id="filtrado-productos"
             >
               <option value="">Seleccionar...</option>
-              <option value="Promociones">Promociones</option>
-              <option value="Pizzas">Pizzas</option>
-              <option value="Empanadas">Empanadas</option>
-              <option value="Bebidas">Bebidas</option>
+              <option value="Promocion">Promociones</option>
+              <option value="Pizza">Pizzas</option>
+              <option value="Empanada">Empanadas</option>
+              <option value="Bebida">Bebidas</option>
             </select>
-            <label for="buscar-input">Buscar producto:</label>
+            <label for="busqueda-producto">Buscar producto:</label>
             <input
               type="search"
               name="barra-busqueda"
-              id="buscar-input"
+              id="busqueda-producto"
               placeholder="Escriba aquí..."
             />
           </div>
 
-          <button class="boton-buscar" type="submit">Buscar</button>
+          <button class="boton-buscar" type="button" id="boton-buscar">Buscar</button>
         </form>
       </section>
 
       <section class="seccion-carta">
+
+        <section id="resultados-busqueda" class="seccion-principal">
+          <!--style="display: none;""-->
+          <h2>Resultados de la búsqueda</h2>
+          <div id="resultados-productos" class="contenedor-productos">
+
+          </div>
+        </section>
+
         <section class="seccion-principal">
           <h2>Pizzas</h2>
           <section class="contenedor-productos" id="contenedor-pizzas">
