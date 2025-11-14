@@ -75,7 +75,7 @@
               name="Filtrado"
               id="filtrado-productos"
             >
-              <option value="">Seleccionar...</option>
+              <option value="">Todos los productos</option>
               <option value="Promocion">Promociones</option>
               <option value="Pizza">Pizzas</option>
               <option value="Empanada">Empanadas</option>
@@ -91,12 +91,19 @@
           </div>
 
           <button class="boton-buscar" type="button" id="boton-buscar">Buscar</button>
+          <button class="boton-buscar" type="button" id="boton-limpiar">Limpiar</button>
         </form>
       </section>
 
+      <img
+        class="linea-divisora"
+        src="/recursos/imagenes/svg/lineaDivisoria.svg"
+        alt="Línea divisoria roja"
+      />
+      
       <section class="seccion-carta">
-
-        <section id="resultados-busqueda" class="seccion-principal">
+        
+        <section id="resultados-busqueda" class="seccion-principal" style="display: none;">
           <!--style="display: none;""-->
           <h2>Resultados de la búsqueda</h2>
           <div id="resultados-productos" class="contenedor-productos">

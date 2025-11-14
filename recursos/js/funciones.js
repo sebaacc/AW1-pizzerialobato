@@ -3,12 +3,12 @@ function renderizarProductos(arregloProductos, $refContenedor) {
     arregloProductos.forEach((producto) => {
         const plantilla = `
         <article>
-              <img
+            <img
                 src="${producto.imagen.src}"
                 alt="${producto.imagen.alt}"
-              />
-              <span>${producto.nombre}</span>
-              <p>$${producto.precio}</p>
+            />
+            <span>${producto.nombre}</span>
+            <p>$${producto.precio}</p>
         </article>
         `
         html += plantilla
@@ -43,20 +43,38 @@ function filtrarProductos(todosLosProductos) {
     return productosFiltrados;
 }
 
-function mostrarResultadosFiltrados(productosFiltrados) {
-    console.log('Productos filtrados:', productosFiltrados);
-    
-    // Mostrar en consola cuántos productos encontró
-    console.log(`Se encontraron ${productosFiltrados.length} productos`);
-    
-    // Mostrar los nombres de los productos encontrados
-    productosFiltrados.forEach(producto => {
-        console.log(`- ${producto.nombre} (${producto.categoria})`);
-    });
-    
-    // Aquí después podremos renderizarlos en el HTML
-    return productosFiltrados;
+function obtenerProductosJSON(url) {
+    return fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+            return data;
+        })
+        .catch(error => {
+            console.error('Error al cargar el archivo JSON:', error);
+            return [];
+        });
 }
+
+
+
+
+
+
+// function mostrarResultadosFiltrados(productosFiltrados) {
+//     console.log('Productos filtrados:', productosFiltrados);
+    
+//     // Mostrar en consola cuántos productos encontró
+//     console.log(`Se encontraron ${productosFiltrados.length} productos`);
+    
+//     // Mostrar los nombres de los productos encontrados
+//     productosFiltrados.forEach(producto => {
+//         console.log(`- ${producto.nombre} (${producto.categoria})`);
+//     });
+    
+//     // Aquí después podremos renderizarlos en el HTML
+//     return productosFiltrados;
+// }
 
 // Lo ideal sería utilizar esta función para renderizar todos los productos,
 // y que la de arriba en cambio, renderice solo por filtrado y tal (o algunos en Inicio)
@@ -112,4 +130,4 @@ function mostrarResultadosFiltrados(productosFiltrados) {
 //     $refContenedor.innerHTML = html
 // }
 
-export { renderizarProductos, filtrarProductos, mostrarResultadosFiltrados }
+export { renderizarProductos, filtrarProductos, obtenerProductosJSON }

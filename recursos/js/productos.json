@@ -1,4 +1,3 @@
-const productos =
 {
     "pizzas": [
         {
@@ -13,7 +12,7 @@ const productos =
         },
         {
             "id": 2,
-            "nombre": "Pizza Calabresa",
+            "nombre": "Calabresa",
             "precio": 13000,
             "imagen": {
                 "src": "./recursos/imagenes/productos/Pizza-calabresa.webp",
@@ -157,5 +156,3 @@ const productos =
         }
     ]
 }
-
-export default productos;

@@ -110,6 +110,10 @@ nav {
   transition: transform 0.3s ease;
   padding: 60px 20px 0 20px;
 }
+.mostrar-menu {
+  display: none;
+}
+
 .cerrar-menu-btn {
   background: none;
   border: none;
