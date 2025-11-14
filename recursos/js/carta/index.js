@@ -5,6 +5,7 @@ import {
   esconderNavbarScroll,
   mostrarMenuHamburguesa,
 } from '../funciones.js'
+import {API_PRODUCTOS_URL, API_PROMOCIONES_URL} from '../config.js'
 
 const $cabecera = document.getElementById('cabecera-principal')
 
@@ -30,13 +31,9 @@ esconderNavbarScroll($cabecera)
 // Mostrar menú hamburguesa
 mostrarMenuHamburguesa($abrirMenuBtn, $cerrarMenuBtn, $nav)
 
-const productos = await obtenerProductosJSON(
-  'http://127.0.0.1:5500/recursos/js/productos.json',
-)
+const productos = await obtenerProductosJSON(API_PRODUCTOS_URL)
 
-const promociones = await obtenerProductosJSON(
-  'http://127.0.0.1:5500/recursos/js/promociones.json',
-)
+const promociones = await obtenerProductosJSON(API_PROMOCIONES_URL)
 
 renderizarProductos(productos.pizzas, $contenedorPizzas)
 

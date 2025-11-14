@@ -50,8 +50,9 @@ function obtenerProductosJSON(url) {
   return fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      return data
+      return data[0]
     })
+
     .catch((error) => {
       console.error('Error al cargar el archivo JSON:', error)
       return []
