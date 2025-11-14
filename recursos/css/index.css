@@ -563,6 +563,7 @@ a {
   background-color: rgba(0, 0, 0, 0.586);
   padding: 50px;
   border-radius: 15px;
+  max-width: 90%;
 }
 
 .formulario-contacto {
@@ -634,6 +635,12 @@ a {
     text-align: center;
   }
   /*----------------------Página Contacto----------------------*/
+.seccion-hero-contacto h1,
+.seccion-hero-sobrenosotros h1 {
+  max-width: 90%;
+  font-size: 32px;
+  line-height: 40px;
+}
 
   .contacto-guia {
     display: flex;
