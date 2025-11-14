@@ -17,53 +17,37 @@
     <header role="banner" class="cabecera-principal">
       <a class="logo" href="/index.html">
         <img
-          
           src="/recursos/imagenes/iconos-logo/lobato-logo.webp"
           alt="Lobato logo"
           width="100px"
         />
       </a>
-      <nav>
-        <ul>
+
+      <button class="abrir-menu"><i class="fa-solid fa-bars"></i></button>
+
+      <nav id="nav-principal" class="nav-principal">
+        <button id="cerrar-menu" class="cerrar-menu">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </button>
+        <ul class="nav-list">
           <li>
             <a href="/index.html"> Inicio </a>
           </li>
-          <li>|</li>
+          <li class="separador">|</li>
           <li>
             <a href="/carta.html"> Carta </a>
           </li>
-          <li>|</li>
+          <li class="separador">|</li>
           <li>
             <a href="/contacto.html"> Contacto </a>
           </li>
-          <li>|</li>
+          <li class="separador">|</li>
           <li>
             <a href="/sobre-nosotros.html"> Sobre nosotros </a>
           </li>
         </ul>
       </nav>
-      <div class="menu-hamburguesa">
-        <i class="fa-solid fa-bars"></i>
-      </div>
     </header>
-
-    <div id="menu-mobile" class="menu-mobile">
-      <button id="cerrar-menu-btn" class="cerrar-menu-btn">X</button>
-      <ul>
-        <li>
-          <a href="/index.html">Inicio</a>
-        </li>
-        <li>
-          <a href="/carta.html">Carta</a>
-        </li>
-        <li>
-          <a href="/contacto.html">Contacto</a>
-        </li>
-        <li>
-          <a href="/sobre-nosotros.html">Sobre nosotros</a>
-        </li>
-      </ul>
-    </div>
 
     <main class="contenido-principal">
       <section class="seccion-hero">
@@ -224,17 +208,29 @@
         </button>
       </section>
     </main>
-    
+
     <footer class="pie-principal">
       <h3>¡Seguinos en nuestras redes sociales!</h3>
       <section>
-        <a class="social instagram" href="https://www.instagram.com/lobatopizzeria?igsh=MTZ3am5tajNsdnUxaQ==" target="_blank">
+        <a
+          class="social instagram"
+          href="https://www.instagram.com/lobatopizzeria?igsh=MTZ3am5tajNsdnUxaQ=="
+          target="_blank"
+        >
           <i class="fa-brands fa-square-instagram" alt="Instagram"></i>
         </a>
-        <a class="social facebook" href="https://www.facebook.com/pizzerialobato" target="_blank">
+        <a
+          class="social facebook"
+          href="https://www.facebook.com/pizzerialobato"
+          target="_blank"
+        >
           <i class="fa-brands fa-facebook" alt="Facebook"></i>
         </a>
-        <a class="social whatsapp" href="https://wa.me/5401137931972" target="_blank">
+        <a
+          class="social whatsapp"
+          href="https://wa.me/5401137931972"
+          target="_blank"
+        >
           <i class="fa-brands fa-whatsapp" alt="Whatsapp"></i>
         </a>
       </section>

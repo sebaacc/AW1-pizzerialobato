@@ -62,7 +62,6 @@ a {
   height: 70px;
   padding: 0 10%;
   background-color: rgba(81, 112, 255, 1);
-  backdrop-filter: blur(30px);
   /* border: #000000 solid 0.1px; */
   box-shadow: -0.5px -0.5px 0 rgb(0, 0, 0), 0.5px -0.5px 0 rgb(0, 0, 0),
     -0.5px 0.5px 0 rgb(0, 0, 0), 0.5px 0.5px 0 rgb(0, 0, 0);
@@ -80,82 +79,6 @@ a {
   align-items: center;
   width: 110px;
   margin: 0;
-}
-
-nav {
-  display: none;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.cabecera-principal ul {
-  display: flex;
-  gap: 20px;
-  justify-content: space-between;
-  align-items: center;
-}
-/*-----------Menu hamburguesa mobile----------------*/
-
-.menu-mobile {
-  /*esto tendría que activarse en JS con el boton del menú hamburguesa*/
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 280px;
-  background: #004aad;
-  box-shadow: -2px 0 5px 1px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-  transition: transform 0.3s ease;
-  padding: 60px 20px 0 20px;
-}
-.mostrar-menu {
-  display: none;
-}
-
-.cerrar-menu-btn {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 1.5rem;
-  cursor: pointer;
-  margin-bottom: 20px;
-  line-height: 1;
-}
-
-.menu-mobile ul {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.menu-mobile li {
-  border-bottom: 3px solid rgba(255, 255, 255, 0.1); /* Línea divisoria suave */
-  padding-bottom: 10px;
-  padding-top: 5px;
-}
-
-.menu-mobile li:last-child {
-  border-bottom: none; /* Para eliminar la línea del último elemento */
-  padding-bottom: 0;
-}
-
-.menu-mobile a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.1rem;
-  display: block;
-  padding: 5px 0;
-  transition: color 0.2s ease;
-}
-
-.menu-mobile a:hover,
-.menu-mobile a:focus {
-  color: #be3d48;
-  font-weight: bold;
 }
 
 /*---------------------- BODY --------------------------*/
@@ -185,7 +108,10 @@ nav {
   background-position: center; /* Centra la imagen de fondo */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
-
+.seccion-hero i {
+  font-size: 2rem;
+  color: #ffff;
+}
 .seccion-hero a {
   color: inherit;
 }
@@ -220,6 +146,7 @@ nav {
   padding: 15px;
   justify-content: space-between;
   width: 75%;
+  z-index: 990;
 }
 
 .hijo-overlay i {
@@ -353,7 +280,7 @@ nav {
 }
 
 /*---------------------- FOOTER --------------------------*/
-i {
+.pie-principal i {
   font-size: 45px;
   color: #ffff;
 }
@@ -586,14 +513,52 @@ i {
 /* ----------------Responsive--------------------------------------- */
 /*----------------------------------------*/
 
-/* Estilos Específicos para Mobile (hasta 600px de ancho) */
-
 @media screen and (max-width: 600px) {
   /*---------------Header--------------------*/
-  .menu-hamburguesa i {
+  .abrir-menu,
+  .cerrar-menu {
     display: block;
-    font-size: 35px;
+    border: 0;
+    background: transparent;
+    font-size: 1.75rem;
     color: #fff;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .nav-principal {
+    opacity: 0;
+    visibility: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right: 0;
+    background-color: #952f37;
+    z-index: 999;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    position: fixed;
+  }
+
+  .nav-principal.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 15px;
+  }
+
+  .separador {
+    display: none;
   }
   /*--------------Body-----------------------*/
   .contenido-principal .imagen-hero {
@@ -680,7 +645,7 @@ i {
     gap: 10px;
   }
 
-  .campos-obligatorios{
+  .campos-obligatorios {
     margin-bottom: 10px;
   }
 
@@ -787,6 +752,16 @@ i {
   /*---------------Header--------------------*/
   nav {
     display: block;
+  }
+  .abrir-menu,
+  .cerrar-menu {
+    display: none;
+  }
+  .nav-list {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
   }
   /*---Efecto subrayado elemento del menu-----*/
   nav ul li {
@@ -900,7 +875,7 @@ i {
     background-color: #be3d48;
   }
 
-  .barra-de-busqueda{
+  .barra-de-busqueda {
     margin: 5% 10%;
     margin-top: 2%;
   }
@@ -916,11 +891,6 @@ i {
   }
   .seccion-sobre-nosotros p {
     font-size: 20px;
-  }
-
-  /*-----------Menu hamburguesa mobile----------------*/
-  .menu-mobile {
-    display: none;
   }
 
   /*----------------------Página Contacto----------------------*/
@@ -1013,7 +983,7 @@ i {
     justify-content: center;
   }
 
-   .campos-obligatorios{
+  .campos-obligatorios {
     margin-bottom: 10px;
   }
 
