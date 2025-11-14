@@ -61,6 +61,7 @@ const todosLosProductos = [
 const secciones = document.querySelectorAll('.seccion-principal')
 const seccionResultados = document.getElementById('resultados-busqueda')
 const contenedorResultados = document.getElementById('resultados-productos')
+const lineaDivisora = document.getElementById('linea-divisora-carta-promo')
 
 const btnBuscar = document.getElementById('boton-buscar')
 const btnLimpiar = document.getElementById('boton-limpiar')
@@ -72,10 +73,12 @@ function ocultarTodasLasSecciones() {
   secciones.forEach((sec) => {
     if (sec !== seccionResultados) sec.style.display = 'none'
   })
+  lineaDivisora.style.display = 'none'
 }
 
 function mostrarTodasLasSecciones() {
   secciones.forEach((sec) => (sec.style.display = 'block'))
+  lineaDivisora.style.display = 'block'
 }
 
 function mostrarResultados(productosFiltrados) {

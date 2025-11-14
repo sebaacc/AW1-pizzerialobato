@@ -550,7 +550,8 @@ a {
 .seccion-hero-contacto {
   background-image: url('/recursos/imagenes/otros/haciendopizzas.webp');
   height: 300px;
-  background-size: cover;
+  background-size:cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -948,7 +949,6 @@ a {
   }
 
   /*----------------------Página Contacto----------------------*/
-
   .contacto-guia {
     display: grid;
     grid-template-areas:
