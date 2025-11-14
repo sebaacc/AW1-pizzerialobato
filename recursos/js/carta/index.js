@@ -1,20 +1,12 @@
-// import productos from '../productos.js'
-//import promociones from '../promociones.js'
 import {
   renderizarProductos,
   filtrarProductos,
   obtenerProductosJSON,
+  esconderNavbarScroll,
+  mostrarMenuHamburguesa,
 } from '../funciones.js'
-//import productos from "../productos.js";
-//import { renderizarProductos, filtrarProductos } from "./funciones.js";
 
-const productos = await obtenerProductosJSON(
-  'http://127.0.0.1:5500/recursos/js/productos.json',
-)
-
-const promociones = await obtenerProductosJSON(
-  'http://127.0.0.1:5500/recursos/js/promociones.json',
-)
+const $cabecera = document.getElementById('cabecera-principal')
 
 const $contenedorPizzas = document.querySelector('#contenedor-pizzas')
 
@@ -31,13 +23,20 @@ const $nav = document.querySelector('.nav-principal')
 const $abrirMenuBtn = document.querySelector('.abrir-menu')
 
 const $cerrarMenuBtn = document.querySelector('.cerrar-menu')
-$abrirMenuBtn.addEventListener('click', () => {
-  $nav.classList.add('visible')
-})
 
-$cerrarMenuBtn.addEventListener('click', () => {
-  $nav.classList.remove('visible')
-})
+// para ocultar y mostrar navbar al hacer scroll
+esconderNavbarScroll($cabecera)
+
+// Mostrar menú hamburguesa
+mostrarMenuHamburguesa($abrirMenuBtn, $cerrarMenuBtn, $nav)
+
+const productos = await obtenerProductosJSON(
+  'http://127.0.0.1:5500/recursos/js/productos.json',
+)
+
+const promociones = await obtenerProductosJSON(
+  'http://127.0.0.1:5500/recursos/js/promociones.json',
+)
 
 renderizarProductos(productos.pizzas, $contenedorPizzas)
 
@@ -46,7 +45,6 @@ renderizarProductos(productos.empanadas, $contenedorEmpanadas)
 renderizarProductos(productos.bebidas, $contenedorBebidas)
 
 renderizarProductos(promociones.promociones, $contenedorPromociones)
-
 // --------------------------------------------------------
 // 1) Unir todos los productos en un solo array
 // --------------------------------------------------------
@@ -114,31 +112,3 @@ $menuHamburguesa.addEventListener('click', () => {
   $navegacion.classList.toggle('mostrar-menu')
   $menuHamburguesa.style.display = 'block'
 })
-
-// import productos from '../productos.js'
-// import promociones from '../promociones.js'
-// import { renderizarProductos, filtrarProductos, mostrarResultadosFiltrados } from '../funciones.js'
-
-// // Combinar todos los productos una sola vez
-// const todosLosProductos = [
-//     ...productos.pizzas,
-//     ...productos.empanadas,
-//     ...productos.bebidas,
-//     ...promociones
-// ];
-
-// const btnFiltrar = document.getElementById('boton-buscar');
-// const $contenedorResultados = document.getElementById('resultados-productos');
-
-// btnFiltrar.addEventListener('click', function(event) {
-//     event.preventDefault();
-
-//     // PASO 1: Filtrar productos
-//     const productosFiltrados = filtrarProductos(todosLosProductos);
-
-//     // PASO 2: Mostrar resultados (por ahora en consola)
-//     mostrarResultadosFiltrados(productosFiltrados);
-
-//     // PASO 3: (Próximo paso) Renderizar estos resultados en el HTML
-//     renderizarProductos(productosFiltrados, $contenedorResultados);
-// });

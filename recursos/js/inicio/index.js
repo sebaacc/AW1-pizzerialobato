@@ -1,26 +1,39 @@
-import { renderizarProductos, obtenerProductosJSON } from '../funciones.js'
+import {
+  renderizarProductos,
+  obtenerProductosJSON,
+  esconderNavbarScroll,
+  mostrarMenuHamburguesa,
+} from '../funciones.js'
 
+// Selección de elementos del DOM y listeners
 const $contenedorProductos = document.querySelector('#contenedor-productos')
 
 const $contenedorPromociones = document.querySelector('#contenedor-promos')
 
+
 const $nav = document.querySelector('.nav-principal')
+
+const $cabecera = document.getElementById('cabecera-principal')
 
 const $abrirMenuBtn = document.querySelector('.abrir-menu')
 
 const $cerrarMenuBtn = document.querySelector('.cerrar-menu')
-$abrirMenuBtn.addEventListener('click', () => {
-  $nav.classList.add('visible')
-})
 
-$cerrarMenuBtn.addEventListener('click', () => {
-  $nav.classList.remove('visible')
-})  
+// Mostrar menú hamburguesa
+mostrarMenuHamburguesa($abrirMenuBtn, $cerrarMenuBtn, $nav)
 
-const productos = await obtenerProductosJSON('http://127.0.0.1:5500/recursos/js/productos.json')
+// para ocultar y mostrar navbar al hacer scroll
+esconderNavbarScroll($cabecera)
 
-const promociones = await obtenerProductosJSON('http://127.0.0.1:5500/recursos/js/promociones.json')
+// Obtener y renderizar productos y promociones
+const productos = await obtenerProductosJSON(
+  'http://127.0.0.1:5500/recursos/js/productos.json',
+)
 
-renderizarProductos(productos.pizzas.slice(0,3), $contenedorProductos)
+const promociones = await obtenerProductosJSON(
+  'http://127.0.0.1:5500/recursos/js/promociones.json',
+)
 
-renderizarProductos(promociones.promociones.slice(0,3), $contenedorPromociones)
+renderizarProductos(productos.pizzas.slice(0, 3), $contenedorProductos)
+
+renderizarProductos(promociones.promociones.slice(0, 3), $contenedorPromociones)

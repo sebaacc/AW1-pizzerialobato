@@ -34,6 +34,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  padding-top: 70px;
 }
 
 ul,
@@ -57,7 +58,8 @@ a {
 }
 
 .cabecera-principal {
-  /* position: sticky; */
+  position: fixed;
+  width: 100%;
   top: 0;
   display: flex;
   justify-content: space-between;
@@ -65,9 +67,15 @@ a {
   height: 70px;
   padding: 0 10%;
   background-color: rgba(81, 112, 255, 1);
-  /* border: #000000 solid 0.1px; */
   box-shadow: -0.5px -0.5px 0 rgb(0, 0, 0), 0.5px -0.5px 0 rgb(0, 0, 0),
     -0.5px 0.5px 0 rgb(0, 0, 0), 0.5px 0.5px 0 rgb(0, 0, 0);
+  z-index: 995;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.cabecera-principal.hidden {
+  transform: translateY(-100%);
 }
 
 .cabecera-principal > a {
