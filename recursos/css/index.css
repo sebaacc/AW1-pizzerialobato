@@ -48,9 +48,12 @@ a {
 .logo img {
   transition: filter 0.3s ease;
 }
+.logo img {
+  filter: brightness(1.25) saturate(1.25);
+}
 
 .logo:hover img {
-  filter: brightness(1.25) saturate(1.25);
+  filter: brightness(2);
 }
 
 .cabecera-principal {
@@ -82,11 +85,10 @@ a {
 }
 
 /*---------------------- BODY --------------------------*/
-/* banner del inicio */
 .contenido-principal {
   flex-grow: 1;
-  padding-bottom: 5%;
 }
+/* banner del inicio */
 
 .contenedor-overlay {
   display: flex;
@@ -177,14 +179,14 @@ a {
   flex-direction: column;
   text-align: center;
   margin: 0px 5px;
-  gap: 15px;
+  gap: 50px;
 }
 
 .iframes-opiniones {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 3rem;
 }
 .iframes-opiniones iframe {
   border: #000000 solid 0.5px;
@@ -274,7 +276,7 @@ a {
 
 .linea-divisora {
   display: block;
-  margin: 1.5rem auto; /* Auto en los lados centra horizontalmente */
+  margin: 2rem auto;
   max-width: 80%;
   height: auto;
 }
@@ -416,6 +418,15 @@ a {
 
 /*-----------Página Carta / Filtros y búsqueda----------------*/
 
+.seccion-hero-carta {
+  background-image: url('/recursos/imagenes/productos/pizza-4_quesos.webp');
+  height: 300px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .busqueda-grid {
   display: grid;
   justify-content: center;
@@ -434,8 +445,9 @@ a {
   border: #000000 solid 0.5px;
   text-align: center;
   padding: 10px;
-  margin: 5% 10%;
   text-align: center;
+  width: 45%;
+  min-width: 330px;
 }
 
 .barra-de-busqueda input,
@@ -470,6 +482,22 @@ a {
 }
 
 /*----------------------Página Sobre Nosotros---------------------*/
+.seccion-hero-sobrenosotros {
+  background-image: url('/recursos/imagenes/otros/cajaPizzalobato.png');
+  height: 300px;
+  background-repeat: repeat-x;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seccion-hero-sobrenosotros h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.586);
+  padding: 50px;
+  border-radius: 15px;
+}
 .seccion-sobre-nosotros {
   display: flex;
   flex-direction: column;
@@ -501,7 +529,7 @@ a {
 }
 
 .seccion-sobre-nosotros p {
-  margin: 20px 0px;
+  margin: 25px 25px;
 }
 
 .a-contacto {
@@ -509,6 +537,29 @@ a {
   text-decoration: underline;
 }
 
+/*----------------------Página Contacto---------------------*/
+
+.seccion-hero-contacto {
+  background-image: url('/recursos/imagenes/productos/Empanada-criolla.webp');
+  height: 300px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seccion-hero-contacto h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.586);
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.formulario-contacto {
+  border-radius: 8px;
+  border: #000000 solid 0.5px;
+}
 /*----------------------------------------*/
 /* ----------------Responsive--------------------------------------- */
 /*----------------------------------------*/
@@ -567,6 +618,7 @@ a {
   .seccion-hero {
     background-image: url('/recursos/imagenes/otros/portada-Inicio-mobile.webp');
     height: 500px;
+    background-size: cover;
   }
 
   .card-informacion {
@@ -635,7 +687,6 @@ a {
     margin: 0 15px;
     padding: 4%;
     background-color: #5171ff65;
-    border-radius: 15px;
   }
 
   .formulario-contacto form {
@@ -875,11 +926,6 @@ a {
     background-color: #be3d48;
   }
 
-  .barra-de-busqueda {
-    margin: 5% 10%;
-    margin-top: 2%;
-  }
-
   /*-----------Sobre Nosotros--------------*/
   .seccion-sobre-nosotros img:hover {
     transform: scale(1.01);
@@ -890,7 +936,7 @@ a {
     margin: auto;
   }
   .seccion-sobre-nosotros p {
-    font-size: 20px;
+    font-size: 1.2rem;
   }
 
   /*----------------------Página Contacto----------------------*/

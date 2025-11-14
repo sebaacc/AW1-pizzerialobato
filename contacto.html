@@ -50,7 +50,14 @@
     </header>
 
     <main class="contenido-principal">
-      <h1>Contactate con nosotros</h1>
+      <section class="seccion-hero-contacto">
+        <h1>Contactate con nosotros</h1>
+      </section>
+      <img
+        class="linea-divisora"
+        src="/recursos/imagenes/svg/lineaDivisoria.svg"
+        alt="Línea divisoria roja"
+      />
       <section class="contacto-guia">
         <div class="div-img-tel">
           <img
@@ -112,7 +119,7 @@
           />
           <label for="id-nombre" class="nom-ape">Nombre y apellido</label>
           <div class="input-nom-ape">
-            <input type="text" name="nombre" id="id-nombre" required />
+            <input type="text" name="nombre" id="id-nombre" required autocomplete="name" />
             <span>*</span>
           </div>
 
@@ -121,9 +128,9 @@
             alt="Icono telefono"
             class="ico-num-tel"
           />
-          <label for="id-telelefono" class="num-tel">Número de teléfono</label>
+          <label for="id-telefono" class="num-tel">Número de teléfono</label>
           <div class="input-num-tel">
-            <input type="tel" name="tel" id="id-telefono" required />
+            <input type="tel" name="tel" id="id-telefono" required autocomplete="tel" />
             <span>*</span>
           </div>
 
@@ -134,7 +141,7 @@
           />
           <label for="id-email" class="email">Correo electrónico</label>
           <div class="input-email">
-            <input type="email" name="email" id="id-email" required />
+            <input type="email" name="email" id="id-email" required autocomplete="email"/>
             <span>*</span>
           </div>
 
@@ -155,6 +162,11 @@
           <button type="submit" class="boton-productos enviar">Enviar</button>
         </form>
       </section>
+      <img
+        class="linea-divisora"
+        src="/recursos/imagenes/svg/lineaDivisoria.svg"
+        alt="Línea divisoria roja"
+      />
     </main>
 
     <footer class="pie-principal">

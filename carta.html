@@ -50,38 +50,39 @@
     </header>
 
     <main class="contenido-principal">
-      <h1>Nuestras especialidades</h1>
-      <section class="barra-de-busqueda">
-        <form action="form-busqueda" method="get" class="form-busqueda">
-          <div class="busqueda-grid">
-            <label for="filtrado-productos">Filtrar por</label>
-            <select
-              class="select-busqueda"
-              name="Filtrado"
-              id="filtrado-productos"
-            >
-              <option value="">Todos los productos</option>
-              <option value="Promocion">Promociones</option>
-              <option value="Pizza">Pizzas</option>
-              <option value="Empanada">Empanadas</option>
-              <option value="Bebida">Bebidas</option>
-            </select>
-            <label for="busqueda-producto">Buscar producto:</label>
-            <input
-              type="search"
-              name="barra-busqueda"
-              id="busqueda-producto"
-              placeholder="Escriba aquí..."
-            />
-          </div>
+      <section class="seccion-hero-carta">
+        <section class="barra-de-busqueda">
+          <form action="form-busqueda" method="get" class="form-busqueda">
+            <div class="busqueda-grid">
+              <label for="filtrado-productos">Filtrar por</label>
+              <select
+                class="select-busqueda"
+                name="Filtrado"
+                id="filtrado-productos"
+              >
+                <option value="">Todos los productos</option>
+                <option value="Promocion">Promociones</option>
+                <option value="Pizza">Pizzas</option>
+                <option value="Empanada">Empanadas</option>
+                <option value="Bebida">Bebidas</option>
+              </select>
+              <label for="busqueda-producto">Buscar producto:</label>
+              <input
+                type="search"
+                name="barra-busqueda"
+                id="busqueda-producto"
+                placeholder="Escriba aquí..."
+              />
+            </div>
 
-          <button class="boton-buscar" type="button" id="boton-buscar">
-            Buscar
-          </button>
-          <button class="boton-buscar" type="button" id="boton-limpiar">
-            Limpiar
-          </button>
-        </form>
+            <button class="boton-buscar" type="button" id="boton-buscar">
+              Buscar
+            </button>
+            <button class="boton-buscar" type="button" id="boton-limpiar">
+              Limpiar
+            </button>
+          </form>
+        </section>
       </section>
 
       <img
@@ -138,6 +139,11 @@
           id="contenedor-promociones"
         ></section>
       </section>
+      <img
+        class="linea-divisora"
+        src="/recursos/imagenes/svg/lineaDivisoria.svg"
+        alt="Línea divisoria roja"
+      />
     </main>
 
     <footer class="pie-principal">
