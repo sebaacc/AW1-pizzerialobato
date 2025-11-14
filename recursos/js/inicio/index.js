@@ -1,41 +1,13 @@
-import productos from '../productos.js'
-import promociones from '../promociones.js'
-import { renderizar } from '../funciones.js'
+import { renderizarProductos, obtenerProductosJSON } from '../funciones.js'
 
 const $contenedorProductos = document.querySelector('#contenedor-productos')
 
 const $contenedorPromociones = document.querySelector('#contenedor-promos')
 
-// const algunosProductos = [
-//     {
-//         id: 2,
-//         categoria: 'Pizza'
-//     },
-//     {
-//         id: 1,
-//         categoria: 'Empanada'
-//     },
-//     {
-//         id: 1,
-//         categoria: 'Pizza'
-//     }
-// ]
+const productos = await obtenerProductosJSON('http://127.0.0.1:5500/recursos/js/productos.json')
 
-// const algunasPromociones = [
-//     {
-//         id: 2,
-//         categoria: 'Promocion'
-//     },
-//     { 
-//         id: 4,
-//         categoria: 'Promocion'
-//     },
-//     {
-//         id: 1,
-//         categoria: 'Promocion'
-//     }
-// ]
+const promociones = await obtenerProductosJSON('http://127.0.0.1:5500/recursos/js/promociones.json')
 
-// renderizar(productos, $contenedorProductos, algunosProductos)
+renderizarProductos(productos.pizzas.slice(0,3), $contenedorProductos)
 
-// renderizar(promociones, $contenedorPromociones, algunasPromociones)
+renderizarProductos(promociones.promociones.slice(0,3), $contenedorPromociones)
