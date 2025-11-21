@@ -15,6 +15,10 @@ const $contenedorPromociones = document.querySelector('#contenedor-promos')
 
 const $verTodosProductosBtn = document.getElementById('boton-carta')
 
+const $verMasProductosBtn = document.getElementById('boton-ver-productos')
+
+const $verMasPromosBtn = document.getElementById('ver-mas-promos')
+
 const $verTodasPromosBtn = document.getElementById('boton-promos')
 
 const $nav = document.querySelector('.nav-principal')
@@ -41,5 +45,7 @@ renderizarProductos(productos.pizzas.slice(0, 3), $contenedorProductos)
 renderizarProductos(promociones.promociones.slice(0, 3), $contenedorPromociones)
 
 verTodosProductos($verTodosProductosBtn)
+verTodosProductos($verMasProductosBtn)
 
 verTodasPromos($verTodasPromosBtn)
+verTodasPromos($verMasPromosBtn)
