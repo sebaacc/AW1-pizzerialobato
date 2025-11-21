@@ -72,15 +72,15 @@
           </div>
           <menu class="hijo-overlay">
             <li>
-              <a class="card-informacion" href="/carta.html/#promos">
+              <a id="boton-promos" class="card-informacion">
                 <i class="fa-brands fa-cash-app" alt="Promociones"></i>
                 <div class="boton-rojo">PROMOS</div>
               </a>
             </li>
             <li>
-              <a class="card-informacion" href="/carta.html/#h1">
+              <a id="boton-carta" class="card-informacion">
                 <i class="fa-solid fa-utensils" alt="Carta de comidas"></i>
-                <div class="boton-rojo">CARTA</div>
+                <div  class="boton-rojo">CARTA</div>
               </a>
             </li>
           </menu>
@@ -96,11 +96,8 @@
       <section class="seccion-principal">
         <h2>Algunos de nuestros productos</h2>
         <div class="contenedor-productos" id="contenedor-productos"></div>
-        <button
-          class="boton-productos"
-          onclick="window.location.href='/carta.html/#h1'"
-        >
-          Ver todos
+        <button id="boton-ver-productos" class="boton-productos">
+          Ver todos los productos
         </button>
       </section>
 
@@ -114,12 +111,7 @@
         <h2>Algunas de nuestras promos vigentes</h2>
         <div class="contenedor-productos" id="contenedor-promos"></div>
 
-        <button
-          class="boton-productos"
-          onclick="window.location.href='/carta.html/#promos'"
-        >
-          Ver todos
-        </button>
+        <button class="boton-productos" id="boton-ver-promos">Ver todos</button>
       </section>
       <img
         class="linea-divisora"

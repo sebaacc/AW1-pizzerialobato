@@ -89,10 +89,51 @@ function mostrarMenuHamburguesa(abrirMenuBtn, cerrarMenuBtn, nav) {
   })
 }
 
+function verTodosProductos($verTodosProductosBtn) {
+  $verTodosProductosBtn.addEventListener('click', () => {
+    window.location.href = '/carta.html#carta'
+  })
+}
+
+function verTodasPromos($verTodasPromosBtn) {
+  $verTodasPromosBtn.addEventListener('click', () => {
+    window.location.href = '/carta.html#promos'
+  })
+}
+
+function esperarQueCargueRecursos() {
+  const hash = window.location.hash // Obtener el hash de la URL
+
+  if (hash) {
+    // Evitar el scroll automático al id promos
+    window.scrollTo(0, 0)
+
+    window.addEventListener('load', function () {
+      // para asegurarnos de saltar al h2 luego de que TODOS los recursos carguen.
+
+      // Retraso para que el usuario "vea" el inicio de la página
+      setTimeout(function () {
+        const elementoDestino = document.querySelector(hash)
+
+        if (elementoDestino) {
+          elementoDestino.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          })
+        }
+      }, 700) // 500ms de retraso
+    })
+  }
+}
+
+
 export {
   renderizarProductos,
   filtrarProductos,
   obtenerProductosJSON,
   esconderNavbarScroll,
   mostrarMenuHamburguesa,
+  verTodosProductos,
+  verTodasPromos,
+  esperarQueCargueRecursos
 }

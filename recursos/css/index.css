@@ -137,6 +137,7 @@ a {
   border-radius: 10px;
   background-color: transparent;
   padding: 6px 8px;
+  cursor: pointer;
 }
 
 .card-informacion:hover {
